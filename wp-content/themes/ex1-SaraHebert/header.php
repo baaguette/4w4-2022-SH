@@ -15,8 +15,7 @@
     </section>
 
     <section class="util">
-        <div class="icone">
-            
+        <div class="icone"> 
         <!-- a[href="#"].icone__lien*5 -->
             <a href="#" class="icone__lien">
             <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#ffffff">
@@ -46,9 +45,8 @@
 
         <form action="" class="recherche">
             <input type="text" class="recherche__input">
-
             <button class="recherche__bouton"> 
-            <svg width="35px" height="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#ffffff">
+            <svg width="45px" height="45px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000000">
             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
             </button>
             

@@ -20,12 +20,14 @@
     display: none;
     @media screen and (min-width: $largeur-media-tablette) {
         display: flex;
+      
     }
 }
 .menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
+   
 }
 .menu-item{
     margin: 0;
@@ -35,10 +37,11 @@
         text-decoration: none;
         &:hover{
             background-color: $background__link-hover;
-            box-shadow: 5px 15px 15px black;
-            transform:translateX(25px);
-            transition:transform .3s;
-            
+            @media screen and (min-width: $largeur-media-tablette) {
+                box-shadow: 5px 15px 15px black;
+                transform:translateX(25px);
+                transition:transform .3s;
+            }
         }
     }
 }

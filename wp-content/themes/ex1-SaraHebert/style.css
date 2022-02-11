@@ -428,6 +428,21 @@ COMPOSANTS
   font-weight: bold;
 }
 
+.site__footer {
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  left: 50%;
+}
+
+.site__footer:hover {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  text-decoration: underline;
+  transform: translateX(25px);
+  transition: transform .3s;
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
@@ -475,6 +490,8 @@ COMPOSANTS
 .recherche__input {
   border: none;
   outline: none;
+  height: 45px;
+  width: 400px;
 }
 
 .recherche__bouton {
@@ -482,12 +499,13 @@ COMPOSANTS
   outline: none;
   top: 0;
   right: 0;
-  height: 20px;
-  width: 20px;
+  height: 45px;
+  width: 45px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #chk-burger {
@@ -542,9 +560,14 @@ COMPOSANTS
 
 .menu-item a:hover {
   background-color: #e6a327;
-  box-shadow: 5px 15px 15px black;
-  transform: translateX(25px);
-  transition: transform .3s;
+}
+
+@media screen and (min-width: 500px) {
+  .menu-item a:hover {
+    box-shadow: 5px 15px 15px black;
+    transform: translateX(25px);
+    transition: transform .3s;
+  }
 }
 
 /* ---------------------------------------------------------
@@ -593,5 +616,11 @@ LAYOUT
 .site__barre {
   grid-area: sidebar;
   background-color: #303df0;
+}
+
+.site__barre__:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transform: translateX(25px);
+  transition: transform .3s;
 }
 /*# sourceMappingURL=style.css.map */

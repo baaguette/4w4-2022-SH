@@ -1,0 +1,15 @@
+.site__footer{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    left: 50%;
+}
+
+.site__footer:hover{
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    text-decoration: underline;
+    transform:translateX(25px);
+    transition:transform .3s;
+
+}
