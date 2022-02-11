@@ -429,18 +429,24 @@ COMPOSANTS
 }
 
 .site__footer {
+  background-color: #333;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  left: 50%;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.site__footer:hover {
+.site__footer a {
+  padding: 10px;
+  width: 45%;
+  color: #a8d5ff;
+}
+
+.site__footer a__:hover {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: none;
   text-decoration: underline;
-  transform: translateX(25px);
-  transition: transform .3s;
 }
 
 .site__header {
@@ -491,7 +497,7 @@ COMPOSANTS
   border: none;
   outline: none;
   height: 45px;
-  width: 400px;
+  width: 300px;
 }
 
 .recherche__bouton {
@@ -610,7 +616,11 @@ LAYOUT
 
 .site__main {
   grid-area: main;
-  background-color: #ccc;
+  background-color: #333;
+}
+
+.site__main h2 {
+  padding-left: 10px;
 }
 
 .site__barre {

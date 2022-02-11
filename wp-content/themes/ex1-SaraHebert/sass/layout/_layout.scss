@@ -52,6 +52,9 @@
     grid-area: main;
     background-color: $color__colorbackground-main;
 }
+.site__main h2{
+    padding-left: 10px;
+}
 
 .site__barre{
     grid-area: sidebar;
