@@ -21,7 +21,6 @@
     @media screen and (min-width: $largeur-media-tablette) {
         display: flex;
     }
-    
 }
 .menu{
     list-style-type: none;
@@ -36,6 +35,10 @@
         text-decoration: none;
         &:hover{
             background-color: $background__link-hover;
+            box-shadow: 5px 15px 15px black;
+            transform:translateX(25px);
+            transition:transform .3s;
+            
         }
     }
 }

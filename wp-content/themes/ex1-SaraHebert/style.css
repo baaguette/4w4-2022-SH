@@ -411,6 +411,8 @@ COMPOSANTS
 
 .cours__carte:hover {
   box-shadow: 5px 15px 15px black;
+  transform: scale(90%);
+  transition: transform .3s;
 }
 
 .cours__carte h2 {
@@ -540,6 +542,9 @@ COMPOSANTS
 
 .menu-item a:hover {
   background-color: #e6a327;
+  box-shadow: 5px 15px 15px black;
+  transform: translateX(25px);
+  transition: transform .3s;
 }
 
 /* ---------------------------------------------------------
