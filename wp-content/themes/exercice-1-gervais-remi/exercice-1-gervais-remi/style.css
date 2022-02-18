@@ -1,9 +1,8 @@
 @charset "UTF-8";
 /**
-Theme name: ex1 sara hebert
-Author: sara hebert
-Author URI:https://github.com/baaguette/Exercice1
-Description: Un quatrieme exemple de thème dans le cadre du cours 4W4
+Theme name: Exercice-1-Remi-Gervais
+Author: Rémi Gervais
+Description: Exercice 1 dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -340,15 +339,16 @@ html {
 ELEMENTS
 --------------------------------------------------------- */
 a {
-  color: #33ff00;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  color: #00f;
 }
 
 a:visited {
-  color: #5bb98d;
+  color: #5b5bb9;
 }
 
 a:hover, a:focus, a:active {
-  color: #dd1e1e;
+  color: #00a;
 }
 
 a:focus {
@@ -360,15 +360,16 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #fdfeff;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  color: #d8db25;
 }
 
 .site__footer a:visited {
-  color: #f80909;
+  color: #df3a08;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #5bb98d;
+  color: #14aa00;
 }
 
 .site__footer a:focus {
@@ -398,154 +399,209 @@ COMPOSANTS
 
 .cours {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .cours__carte {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 0 20px;
-  width: 100%;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  max-width: 45%;
+  margin: 6px 3px;
   border: 2px solid #f4f4ff;
-  background-color: #c7c6c6;
+  background-color: #b7b6af;
 }
 
-@media screen and (min-width: 500px) {
+.cours__carte h2 {
+  color: #f7f7f7;
+  text-align: left;
+  font-size: clamp(0.5rem, 3vw, 1.4rem);
+}
+
+.cours__carte p {
+  margin: 5px 0;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+}
+
+.cours__carte p:nth-of-type(1), .cours__carte .cours__carte p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
   .cours__carte {
-    width: 40%;
     margin: 10px;
+    max-width: 45%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .cours__carte {
-    width: 30%;
-    margin: 20px;
+    height: auto;
+    max-width: 30%;
   }
 }
 
 .cours__carte:nth-of-type(even) {
-  background-color: #a09d9d;
+  background-color: #cecdc5;
 }
 
 .cours__carte:hover {
-  box-shadow: 5px 15px 15px black;
-  transform: scale(90%);
-  transition: transform .3s;
-}
-
-.cours__carte h2 {
-  color: #ffffff;
-  text-align: left;
-}
-
-.cours__carte p {
-  margin: 5px 0;
-}
-
-.cours__carte p:nth-of-type(1), .cours__carte p:nth-of-type(2) {
-  font-weight: bold;
+  box-shadow: 5px 10px 15px rgba(233, 233, 233, 0.6);
+  border-radius: 0px;
+  transition: 0.5s;
 }
 
 .site__footer {
-  background-color: #333;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+}
+
+.site__footer section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.site__footer section > * {
+  padding: 1rem 0;
+  width: 33%;
+  line-height: 2;
+}
+
+.site__footer > p {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.site__footer .menu {
+  margin-left: 10px;
 }
 
 .footer__menu {
   list-style-type: none;
 }
 
-.footer__menu a {
+.footer__menu .menu-item a {
   display: flex;
   align-items: center;
 }
 
-.footer__menu a svg {
+.footer__menu .menu-item a svg {
   padding-right: 10px;
-}
-
-.site__footer a {
-  padding: 10px;
-  width: 45%;
-  color: #fdfeff;
-}
-
-.site__footer a__:hover {
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: none;
-  text-decoration: underline;
 }
 
 .site__header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .site__header {
     flex-direction: row;
   }
 }
 
 .site__header__titre {
+  color: #f7f7f7;
   display: flex;
   align-items: center;
 }
 
 .site__header__titre h1 {
-  font-size: clamp(2rem, 4vw, 6rem);
-  padding: 0 2rem 0 0;
+  padding: 0 clamp(0.7rem, 2vw, 7rem) 0 0;
+  font-size: clamp(1.2rem, 4vw, 4rem);
 }
 
 .site__header__titre h2 {
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(0.7rem, 3vw, 2rem);
 }
 
 .util {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .util {
+    min-width: 400px;
+    align-items: flex-end;
     width: 25%;
+    flex-direction: row;
   }
+  .util .icone {
+    margin-bottom: 0px;
+    margin: 0 auto;
+  }
+  .util .recherche {
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .util {
+    flex-direction: row;
+  }
+}
+
+.icone {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.icone__lien {
+  margin-right: 0.1rem;
+}
+
+.icone__lien svg {
+  color: #a7adb5;
 }
 
 .recherche {
   position: relative;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 .recherche__input {
+  height: 23px;
   border: none;
   outline: none;
-  height: 45px;
-  width: 300px;
+  font-style: italic;
+  background-color: #5f6a75;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .recherche__bouton {
-  border: none;
-  outline: none;
+  padding: 0;
+  background-color: #5f6a75;
   top: 0;
   right: 0;
-  height: 45px;
-  width: 45px;
+  width: 23px;
+  height: 23px;
+  outline: none;
+  border: none;
   position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  border-radius: 5px;
+}
+
+.recherche__bouton svg {
+  color: #cad1d4;
+  width: 100%;
+  height: auto;
 }
 
 #chk-burger {
@@ -558,34 +614,59 @@ COMPOSANTS
 
 #burger {
   position: absolute;
-  transition: transform .3s;
+  top: 0px;
+  left: 0;
+  transition: transform 0.3s;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   #burger {
     display: none;
   }
 }
 
+#burger svg {
+  color: #a7adb5;
+}
+
 #chk-burger:checked ~ .menu-principal-container {
+  display: block;
+  animation-duration: 1s;
+  animation-name: glisser;
+}
+
+#chk-burger:checked ~ .menu-principal {
   display: block;
 }
 
 .menu-principal-container {
-  padding: 20px 0 0 0;
   display: none;
+  overflow: hidden;
+  padding: 20px 0 0;
+  transition: 0.5s;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .menu-principal-container {
-    display: flex;
+    display: block;
+  }
+}
+
+@keyframes glisser {
+  from {
+    height: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    height: 100%;
+    transform: translateX(0);
   }
 }
 
 .menu {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .menu-item {
@@ -593,78 +674,54 @@ COMPOSANTS
 }
 
 .menu-item a {
+  margin: 0;
   display: block;
   padding: 3px;
   text-decoration: none;
 }
 
 .menu-item a:hover {
-  background-color: #e6a327;
-}
-
-@media screen and (min-width: 500px) {
-  .menu-item a:hover {
-    box-shadow: 5px 15px 15px black;
-    transform: translateX(25px);
-    transition: transform .3s;
-  }
+  background-color: #aaa;
 }
 
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #171716;
+  background-color: #e3e9ec;
   font-family: arial;
   color: white;
   display: grid;
   gap: 10px;
-  grid-template-columns: 300px auto;
+  grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-/*vs tablette*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .side {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
-}
-
+/* fin @media tablette */
 .site__header {
   grid-area: header;
-  background-color: #121983;
+  background-color: #202931;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #333;
+  background-color: #151515;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #333;
-}
-
-.site__main h2 {
-  padding-left: 10px;
+  background-color: #313530;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #303df0;
-}
-
-.site__barre__:hover {
-  background-color: rgba(0, 0, 0, 0);
-  transform: translateX(25px);
-  transition: transform .3s;
+  background-color: #404b57;
 }
 /*# sourceMappingURL=style.css.map */

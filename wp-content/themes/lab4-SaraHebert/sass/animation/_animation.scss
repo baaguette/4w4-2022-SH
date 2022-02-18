@@ -1,0 +1,40 @@
+.animation {
+    display: flex;
+    width: 90%;
+    border: 1px solid rgb(125, 160, 235);
+    justify-content: space-around;
+    
+    &__bloc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        color: rgb(0, 0, 0);
+        background-color:$color__background-body;
+        animation: anim_bloc 2s 1s forwards;
+    }
+
+
+    @keyframes anim_bloc {
+        0% {
+            transform: translateY(-10vh);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+}
+.site__barre{
+    grid-area: sidebar;
+    background-color: $color__background-barre;
+    &__:hover
+    {
+     background-color: rgba(0,0,0,0);
+     transform:translateX(5px);
+     transition:transform .3s;
+    }
+}

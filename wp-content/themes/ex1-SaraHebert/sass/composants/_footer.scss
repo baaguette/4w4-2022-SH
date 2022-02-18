@@ -7,6 +7,16 @@
     margin-bottom: 20px;
 
 }
+.footer__menu{
+    list-style-type: none;
+    a{
+        display:flex;
+        align-items: center;
+        svg{
+            padding-right: 10px;
+        }
+    }
+}
 
 .site__footer a{
     padding:10px;
