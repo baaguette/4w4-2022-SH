@@ -569,7 +569,6 @@ ANIMATION
 .animation {
   display: flex;
   width: 90%;
-  border: 1px solid #7da0eb;
   justify-content: space-around;
 }
 
