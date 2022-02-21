@@ -11,7 +11,18 @@ get_header(); ?>
 
 <main class="site__main">
 <h1><?php the_title(); ?></h1>
-	<?php if (have_posts()):the_post(); ?>
+<?php if (have_posts()):the_post(); ?>
+<article class="article">
+<div class="article__contenu">
+		<?php
+		if(has_post_thumbnail()) ?>{
+			<figure class="article__contenu__figure">
+			<?php the_post_thumbnail("medium"); ?>  
+			</figure>
+		}
+	?>
+	</div>
+</article>
 	<?php the_content(); ?>
 	<?php endif; ?>
 		

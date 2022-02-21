@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <main class="principal">
-<h1>------INDEX------</h1>
+    <h1>------------</h1>
+    <!-- le fichier doit exactement comme specifier dans wordpress, soit category-cours(nom de catégorie) -->
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
@@ -14,6 +15,7 @@
                         $sigleCours = substr($titre, 0, 7);
                         $descCours = get_the_excerpt();
                         ?>
+                        <?php  the_post_thumbnail("medium"); ?>  
                         <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
