@@ -1,8 +1,9 @@
-@mixin links($couleur, $couleur_visite,$couleur-hover) {
+@mixin links($couleur, $couleur-visited, $couleur-hover) {
+	font-size: clamp(0.5rem, 2vw, 1.2rem);
 	color: $couleur;
 
 	&:visited {
-		color: $couleur-visite;
+		color: $couleur-visited;
 	}
 
 	&:hover,
@@ -25,6 +26,7 @@
 a {
 	@include links($color__link, $color__link-visited, $color__link-hover);
 }
-.site__footer a{
-	@include links($color__link-footer,$color__link-footer-hover, $color__link-footer-visited);
+
+.site__footer a {
+	@include links($color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }
