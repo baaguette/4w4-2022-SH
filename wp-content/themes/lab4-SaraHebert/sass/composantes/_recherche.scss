@@ -1,0 +1,23 @@
+.util{
+    display: flex;
+    flex-direction: column;
+    margin-left: $font__main;
+  }
+  .recherche{
+    background-color: rgba(#000, .1);
+    width: 300px;
+    position: relative;
+      &__input{
+        background-color: transparent;
+        width: 100%;
+      }
+      &__button{
+          position: absolute;
+          display: flex;
+          align-items: center;
+          align-content: center;
+        svg{
+
+        }
+      }
+  }
