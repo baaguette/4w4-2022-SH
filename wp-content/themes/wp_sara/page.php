@@ -10,19 +10,9 @@
 get_header(); ?>
 
 <main class="site__main">
-<h1><?php the_title(); ?></h1>
-<?php if (have_posts()):the_post(); ?>
-<article class="article">
-<div class="article__contenu">
-		<?php
-		if(has_post_thumbnail()) ?>{
-			<figure class="article__contenu__figure">
-			<?php the_post_thumbnail("medium"); ?>  
-			</figure>
-		}
-	?>
-	</div>
-</article>
+<h1>------single php------</h1>
+	<?php if (have_posts()):the_post(); ?>
+	<?php the_title(); ?>
 	<?php the_content(); ?>
 	<?php endif; ?>
 		

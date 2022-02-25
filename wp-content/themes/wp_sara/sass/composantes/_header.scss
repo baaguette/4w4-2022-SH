@@ -1,5 +1,4 @@
 .site__header {
-    display: flex;
     background-color: $color__background-header;
     color: $color__font-header;
     padding-left: 10px;
@@ -8,13 +7,8 @@
       font-size: 3em;
       font-family: $font__titre;
     }
-    .header__description {
+    .header__desc {
       font-size: 1.5rem;
       font-family: $font__main;
-      padding-top: 3%;
-      padding-left: 2%;
-      
     }
   }
-  
-  
