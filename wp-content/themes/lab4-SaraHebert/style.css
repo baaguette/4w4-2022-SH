@@ -466,6 +466,7 @@ COMPOSANTES
 }
 
 .site__header {
+  display: flex;
   background-color: #070A0D;
   color: #ffffff;
   padding-left: 10px;
@@ -514,7 +515,7 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #070A0D;
+  background-color: #22222200;
 }
 
 .menu-item a:hover {
@@ -532,7 +533,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #070A0D;
+  background-color: #1f1f1f;
   padding: 15px;
 }
 
@@ -568,9 +569,28 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.erreur h1 {
-  font-size: 5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.recherche {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+  width: 100%;
+}
+
+.recherche__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 /* ---------------------------------------------------------
@@ -645,7 +665,7 @@ theme name: lab 4 - Sara Hebert
 
 .site__footer {
   grid-area: footer;
-  background-color: #070A0D;
+  background-color: #1f1f1f;
 }
 
 .site {
