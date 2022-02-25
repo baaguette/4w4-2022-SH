@@ -4,12 +4,13 @@
     float: right;
     margin-left: 10%;
     margin-top: 7%;
+    @media screen and (max-width : $largeur__media--tablette){
+        display:none;
+     }
   }
 input:hover{
   background-color: rgba(21, 255, 0, 0.61);
   color: white;
-
-   
 
 }
   .recherche{
@@ -38,11 +39,10 @@ input:hover{
         align-items: center;
         justify-content: center;
         background-color: rgba(0,0,0,0);
-        
-      
     }
-
+    
 }
+
 
 
 //Animation loupe barre recherche
