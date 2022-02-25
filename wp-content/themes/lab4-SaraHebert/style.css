@@ -477,9 +477,11 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 3%;
+  padding-left: 2%;
 }
 
 #burger {
@@ -534,17 +536,29 @@ COMPOSANTES
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #1f1f1f;
-  padding: 15px;
+  padding: 20px;
+  justify-content: space-around;
+  gap: 10px;
+  display: flex;
+}
+
+.site__footer__menu {
+  display: flex;
+  flex-direction: row;
 }
 
 .site__footer__menu__ul {
   display: flex;
+  flex: 1;
   list-style-type: none;
   justify-content: center;
+  flex-direction: column;
 }
 
 .site__footer__menu__ul .menu-item {
   margin: 10px 5px;
+  flex: 2;
+  flex-direction: column;
 }
 
 .site__footer__menu__ul .menu-item a {
@@ -554,7 +568,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #00ffbf;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #ff0d00;
 }
 
 .footer__titre,
@@ -572,6 +590,7 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: row;
+  float: right;
   margin-left: 10%;
   margin-top: 7%;
 }
@@ -587,6 +606,10 @@ input:hover {
 
 .recherche:hover {
   animation: loupe 2s ease-in-out 0s infinite reverse none;
+}
+
+.recherche:hover svg {
+  color: white;
 }
 
 .recherche__input {

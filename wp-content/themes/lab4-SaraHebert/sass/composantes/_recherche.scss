@@ -1,6 +1,7 @@
 .util{
     display: flex;
     flex-direction: row;
+    float: right;
     margin-left: 10%;
     margin-top: 7%;
   }
@@ -15,6 +16,9 @@ input:hover{
     position: relative;
     &:hover{
       animation: loupe 2s ease-in-out 0s infinite reverse none;
+      svg { 
+        color: white;
+      }
     }
     &__input{
         border:none;

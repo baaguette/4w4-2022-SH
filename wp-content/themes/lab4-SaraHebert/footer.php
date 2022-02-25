@@ -1,7 +1,8 @@
 <footer class="site__footer">
     <h2 class="footer__titre">footer</h2>
+    <br>
     <p class="footer__presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, totam sint a alias perferendis doloremque quibusdam veritatis, doloribus veniam, voluptatibus distinctio pariatur? Exercitationem quod accusantium explicabo, sequi magnam error id?</p>
-    <h3 class="footer__author">sh</h3>
+    <h3 class="footer__author"></h3>
 
 <?php 
 
