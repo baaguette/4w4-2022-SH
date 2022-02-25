@@ -31,8 +31,8 @@
         padding : 4px;
         background-color: $color__background-link;
         &:hover{
-            background-color: $background__link-hover;
-            @media screen and (min-width: $largeur-media-tablette) {
+            background-color: $color__background-link-hover;
+            @media screen and (min-width: $largeur__media-tablette) {
                 box-shadow: 5px 15px 15px black;
                 transform:translateX(25px);
                 transition:transform .3s;
@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (min-width : $largeur__media--tablette){
+@media screen and (min-width : $largeur__media-tablette){
     #burger {
         display : none;
     }

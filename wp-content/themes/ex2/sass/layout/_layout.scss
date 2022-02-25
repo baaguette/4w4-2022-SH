@@ -43,7 +43,7 @@ theme name: lab 4 - Sara Hebert
 		"footer";
 }
 
-@media screen and (min-width : $largeur__media--tablette)
+@media screen and (min-width : $largeur__media-tablette)
 {
     .site {
         grid-template-columns: ($size__site-barre) auto;

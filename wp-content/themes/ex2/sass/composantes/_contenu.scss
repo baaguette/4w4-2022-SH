@@ -29,10 +29,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        @media screen and (min-width : $largeur__media--tablette){
+        @media screen and (min-width : $largeur__media-tablette){
             width: 45%;
         }
-        @media screen and (min-width : $largeur__media--desktop){
+        @media screen and (min-width : $largeur__media-desktop){
             width: 30%;
         }
         padding: 10px;
