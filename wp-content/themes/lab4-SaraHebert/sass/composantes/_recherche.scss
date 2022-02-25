@@ -1,13 +1,19 @@
 .util{
+  display: none;
+}
+
+
+ @media screen and (min-width: $largeur-media-tablette) {
+ 
+.util{
     display: flex;
     flex-direction: row;
     float: right;
     margin-left: 10%;
     margin-top: 7%;
-    @media screen and (max-width : $largeur__media--tablette){
-        display:none;
-     }
+   
   }
+
 input:hover{
   background-color: rgba(21, 255, 0, 0.61);
   color: white;
@@ -91,4 +97,5 @@ input:hover{
   100% {
     transform: translate(0);
   }
+}
 }
