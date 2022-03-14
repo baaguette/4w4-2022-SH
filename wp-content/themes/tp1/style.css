@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: groupe-1 eddy martin
+theme name: groupe-02 eddy martin
 Author: Eddy martin
 Author URI: https://github.com/eddytuto
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -16,6 +16,8 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS DU MENU FOOTER*/
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
@@ -366,26 +368,13 @@ a:hover, a:active {
   outline: 0;
 }
 
-.site__footer a {
-  color: #f40b0b;
+/*
+ .site__footer a{
+	@include links(	$color__link__footer,
+					$color__link__footer-visited, 
+					$color__link__footer-hover );
 }
-
-.site__footer a:visited {
-  color: #1435eb;
-}
-
-.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
-}
-
-.site__footer a:focus {
-  outline: thin dotted;
-}
-
-.site__footer a:hover, .site__footer a:active {
-  outline: 0;
-}
-
+*/
 .header__titre a {
   color: #f06a6a;
 }
@@ -406,17 +395,87 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__footer .menu-item a {
+  color: #fff;
+  background-color: #327aaa;
+}
+
+.site__footer .menu-item a svg {
+  color: #fff;
+}
+
+.site__footer .menu-item a:visited {
+  color: #bbb;
+  background-color: #7878ad;
+}
+
+.site__footer .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #0f0;
+  background-color: #a092c7;
+}
+
+.site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
+  color: #0f0;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.site__barre .menu-item a {
+  color: #fff;
+  background-color: rgba(140, 189, 223, 0.1);
+}
+
+.site__barre .menu-item a svg {
+  color: #fff;
+}
+
+.site__barre .menu-item a:visited {
+  color: #bbb;
+  background-color: #010113;
+}
+
+.site__barre .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
+  color: #eeff00;
+  background-color: #29809b;
+}
+
+.site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
+  color: #eeff00;
+}
+
+.site__barre .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
+  padding: 10px 15px;
   background-color: #d5e6f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {
-  padding: 10px 15px;
   display: flex;
   flex-direction: column;
 }
@@ -473,31 +532,26 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #6faee2;
-  color: #040629;
-  padding-left: 10px;
   display: flex;
-  align-items: center;
+  background-color: #6faee2;
+  color: #fa9292;
+  padding-left: 10px;
 }
 
-.header__titre {
+.site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.header__description {
+.site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .util {
-  margin-left: auto;
   display: flex;
   flex-direction: column;
-}
-
-.util__menu {
-  display: flex;
+  margin-left: auto;
 }
 
 #burger {
@@ -537,11 +591,6 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #8293e3;
-}
-
-.menu-item a:hover {
-  background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
@@ -553,11 +602,43 @@ COMPOSANTES
   }
 }
 
+/*
+<footer class="site__footer">
+    <!-- première rangé de colonne -->
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
+        </section>
+        <section class="footer__adresse">
+            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
+        </section>
+        <sectio
+         class="footer__liens">
+        <?php w
+        _nav_menu(array(
+               
+        "menu"=>"externe")); ?>
+        </secti
+        n>
+    </div>
+    <!-- sectio
+     de plusieurs lignes -->
+    <div class=
+    site__footer__ligne">
+        <sectio
+         class="footer__description"></section>
+        <sectio
+         class="footer__nav"></section>
+        <sectio
+         class="copyright"></section>
+        <sectio
+         class="footer__auteur"></section>
+    </div>
+*/
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #07143b;
-  color: #f1f2f8;
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer__colonne {
@@ -568,7 +649,7 @@ COMPOSANTES
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
+  border: 1px solid #ddd;
   flex: 0 0 30%;
 }
 
@@ -578,69 +659,62 @@ COMPOSANTES
   align-items: center;
 }
 
-.site__footer__ligne .footer__menu__nav__ul {
+.site__footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #07143b;
+  padding: 15px;
+}
+
+.site__footer__menu__ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
 }
 
-.site__footer__ligne .footer__menu__nav__ul .menu-item {
+.site__footer__menu__ul .menu-item {
   margin: 10px 5px;
 }
 
-.site__footer__ligne .footer__menu__nav__ul .menu-item a {
+.site__footer__menu__ul .menu-item a {
   display: flex;
   align-items: center;
   padding: 3px;
 }
 
-.site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
-  color: #f40b0b;
-}
-
-.site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #19e123;
-}
-
-/*
-
-.site__footer {
-    font-family: $font__titre;
-    background-color: $color__background-footer;
-    padding: 15px;
-
-
-  }
-
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: $color__font-footer;
+  color: #ffcabc;
   text-align: center;
-}
-*/
-.erreur-404 {
-  background-color: #b95f85;
 }
 
 .erreur-404 h1 {
   font-size: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.erreur-404 h2 {
-  font-size: 2rem;
-}
-
-.erreur-404 p {
-  font-size: 1rem;
-}
-
-.cours__titre {
-  color: #f00;
-}
-
-.cours section {
+.article__contenu {
   display: flex;
+}
+
+.recherche {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+  width: 100%;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
@@ -661,27 +735,7 @@ ANIMATION
   background-color: #1161f7;
   color: #fff;
   font-size: 3rem;
-  transform: translateY(-100vh);
-}
-
-.animation__bloc:nth-of-type(1) {
-  animation: anim-entete 1s 0s forwards;
-}
-
-.animation__bloc:nth-of-type(2) {
-  animation: anim-entete 1s .25s forwards;
-}
-
-.animation__bloc:nth-of-type(3) {
-  animation: anim-entete 1s .5s forwards;
-}
-
-.animation__bloc:nth-of-type(4) {
-  animation: anim-entete 1s .75s forwards;
-}
-
-.animation__bloc:nth-of-type(5) {
-  animation: anim-entete 1s 1s forwards;
+  animation: anim-entete 1s forwards;
 }
 
 @keyframes anim-entete {
@@ -704,9 +758,23 @@ theme name: Lab 2 Lemieux Florence
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3d99f0;
+  clip-path: polygon(95% 0, 100% 0, 100% 100%, 76% 100%);
+  z-index: -1;
+}
+
 .site__header {
   grid-area: header;
-  background-color: #6faee2;
+  background-color: rgba(111, 174, 226, 0.5);
 }
 
 .site__barre {
@@ -716,8 +784,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #d5e6f1;
-  padding: 10px 15px 10px 15px;
+  background-color: rgba(213, 230, 241, 0.5);
 }
 
 .site__footer {
@@ -734,8 +801,8 @@ theme name: Lab 2 Lemieux Florence
 
 @media screen and (min-width: 800px) {
   .site {
-    grid-template-columns: auto 300px;
-    grid-template-areas: "header header" " main sidebar" "footer footer";
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

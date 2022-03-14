@@ -1,13 +1,12 @@
 .site__main {
     
-  
+    padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
 
-.formation {  
-    padding: 10px 15px;
+.formation {
     display: flex;
     flex-direction: column;
 
