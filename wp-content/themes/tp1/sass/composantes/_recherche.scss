@@ -5,6 +5,10 @@
     &__input{
         background-color: transparent;
         width : 100%;
+        transition: $color__background-header, .3;
+        &:focus{
+            background-color: rgba(0, 0, 0, 0.392);
+        }
     }
 
     &__bouton{
@@ -16,7 +20,7 @@
         justify-content: center;
 
         svg{
-
+            
         }
     }
 

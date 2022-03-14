@@ -8,14 +8,14 @@
       flex-direction: row;
     }
       &__titre{
-
+        display: flex;
       }
     .header__titre {
-      font-size: clamp(2rem, 2vw, 4rem);
+      font-size: clamp(2rem, 2vw, 8rem);
       font-family: $font__titre;
     }
     .header__description {
-      font-size: clamp(2rem, 2vw, 4rem);
+      font-size: clamp(1rem, 2vw, 4rem);
       font-family: $font__main;
     }
   }
@@ -23,5 +23,8 @@
   .util{
     display: flex;
     flex-direction: column;
-    margin-left : auto;
+    align-items: center;
+    @media screen and (min-width: 700px) {
+      margin-left: auto;
+    }
   }
