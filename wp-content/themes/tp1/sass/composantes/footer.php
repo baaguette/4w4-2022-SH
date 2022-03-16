@@ -3,12 +3,12 @@
         <section class="footer__article">
         <?php get_sidebar("footer_colonne_1");  ?>
         </section>
-        <section class="footer__lien">
+        <!-- <section class="footer__lien">
         <?php get_sidebar("footer_colonne_2");  ?>
         </section>
         <section class="footer__adresse">
         <?php get_sidebar("footer_colonne_3");  ?>
-        </section>
+        </section> -->
     </div>
     <div class="site__footer__ligne">
         <section class="footer__description">
@@ -21,7 +21,7 @@
          <?php get_sidebar("footer_ligne_1");  ?>
         </section>
         <section class="footer__auteur">
-            <p>Auteur : Eddy Martin</p>
+            <p>Auteur : Sara Hébert</p>
         </section>
         <section class="footer__menu">
         <?php    
