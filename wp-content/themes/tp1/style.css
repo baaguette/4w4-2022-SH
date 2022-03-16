@@ -353,7 +353,7 @@ a {
 }
 
 a:visited {
-  color: #a30000;
+  color: #001ea3;
 }
 
 a:hover, a:focus, a:active {
@@ -396,17 +396,17 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #e80000;
+  color: #0051e8;
   background-color: #327aaa;
 }
 
 .site__footer .menu-item a svg {
-  color: #e80000;
+  color: #0051e8;
 }
 
 .site__footer .menu-item a:visited {
   color: white;
-  background-color: #929292;
+  background-color: black;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -414,12 +414,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: red;
+  color: #0091ff;
   background-color: white;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: red;
+  color: #0091ff;
 }
 
 .site__footer .menu-item a:focus {
@@ -431,26 +431,26 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a {
-  color: red;
+  color: #00a6ff;
   background-color: rgba(0, 120, 206, 0.1);
 }
 
 .site__barre .menu-item a svg {
-  color: red;
+  color: #00a6ff;
 }
 
 .site__barre .menu-item a:visited {
-  color: rgba(187, 0, 0, 0.768);
+  color: rgba(0, 75, 187, 0.768);
   background-color: rgba(0, 43, 99, 0.419);
 }
 
 .site__barre .menu-item a:visited svg {
-  color: rgba(187, 0, 0, 0.768);
+  color: rgba(0, 75, 187, 0.768);
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
   color: white;
-  background-color: #9b2929;
+  background-color: #3278b9;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
@@ -534,7 +534,7 @@ COMPOSANTES
 .site__header {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #003cff;
   color: white;
   padding-left: 10px;
   margin-bottom: -10px;
@@ -689,12 +689,13 @@ COMPOSANTES
 
 .recherche__input {
   background-color: transparent;
+  color: white;
   width: 100%;
-  transition: red, 0.3;
+  transition: #003cff, 0.3;
 }
 
 .recherche__input:focus {
-  background-color: rgba(0, 0, 0, 0.392);
+  background-color: rgba(255, 255, 255, 0.481);
 }
 
 .recherche__bouton {
@@ -764,7 +765,7 @@ theme name: tp1
 
 .site__header {
   grid-area: header;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 60, 255, 0.5);
 }
 
 .site__barre {

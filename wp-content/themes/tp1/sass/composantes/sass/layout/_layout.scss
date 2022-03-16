@@ -1,9 +1,10 @@
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: TP1
 */
 
 .site {
-    //background-color: rgb(122, 176, 207);
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
     background-color: rgba($color__background-body,.5);
     font-family: $font__main;
 }
