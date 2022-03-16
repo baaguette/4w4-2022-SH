@@ -376,15 +376,15 @@ a:hover, a:active {
 }
 */
 .header__titre a {
-  color: #f06a6a;
+  color: #0a60ff;
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #003bd1;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #8bdce5;
 }
 
 .header__titre a:focus {
@@ -396,12 +396,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #001eff;
+  color: #e80000;
   background-color: #327aaa;
 }
 
 .site__footer .menu-item a svg {
-  color: #001eff;
+  color: #e80000;
 }
 
 .site__footer .menu-item a:visited {
@@ -440,12 +440,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:visited {
-  color: rgba(0, 59, 187, 0.768);
+  color: rgba(187, 0, 0, 0.768);
   background-color: rgba(0, 43, 99, 0.419);
 }
 
 .site__barre .menu-item a:visited svg {
-  color: rgba(0, 59, 187, 0.768);
+  color: rgba(187, 0, 0, 0.768);
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
@@ -482,7 +482,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #ebcac1;
+  color: white;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -517,7 +517,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #ebcac1;
+  color: white;
   margin: 5px 0px;
 }
 
@@ -535,8 +535,9 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   background-color: red;
-  color: #fa9292;
+  color: white;
   padding-left: 10px;
+  margin-bottom: -10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -701,7 +702,7 @@ COMPOSANTES
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: white;
   text-align: center;
 }
 
