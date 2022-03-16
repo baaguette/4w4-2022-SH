@@ -353,7 +353,7 @@ a {
 }
 
 a:visited {
-  color: #5c4033;
+  color: #750000;
 }
 
 a:hover, a:focus, a:active {
@@ -431,30 +431,30 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a {
-  color: #fff;
-  background-color: rgba(140, 189, 223, 0.1);
+  color: white;
+  background-color: rgba(0, 120, 206, 0.1);
 }
 
 .site__barre .menu-item a svg {
-  color: #fff;
+  color: white;
 }
 
 .site__barre .menu-item a:visited {
-  color: #bbb;
-  background-color: #010113;
+  color: #770000;
+  background-color: rgba(0, 43, 99, 0.419);
 }
 
 .site__barre .menu-item a:visited svg {
-  color: #bbb;
+  color: #770000;
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #eeff00;
-  background-color: #29809b;
+  color: red;
+  background-color: #9b2929;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #eeff00;
+  color: red;
 }
 
 .site__barre .menu-item a:focus {
@@ -470,7 +470,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: rgba(91, 133, 89, 0.412);
+  background-color: rgba(3, 88, 153, 0.412);
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -493,7 +493,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #00d100;
+  background-color: rgba(255, 255, 255, 0.528);
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -789,7 +789,7 @@ theme name: Lab 2 Lemieux Florence
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #00d02a;
+  background-color: #d00700;
   clip-path: polygon(95% 0, 100% 0, 100% 100%, 76% 100%);
   z-index: -1;
 }
@@ -806,7 +806,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: rgba(91, 133, 89, 0.5);
+  background-color: rgba(3, 88, 153, 0.5);
 }
 
 .site__footer {

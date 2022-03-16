@@ -1,18 +1,18 @@
 /* ---------------- BACKGROUND */
 $color__background-body : rgb(0, 0, 0);
-$color__background-body-clip : rgb(0, 208, 42);
-$color__background-main : rgba(91, 133, 89, 0.412);
-$color__background-cours : rgb(0, 209, 0);
+$color__background-body-clip : rgb(208, 7, 0);
+$color__background-main : rgba(3, 88, 153, 0.412);
+$color__background-cours : rgba(255, 255, 255, 0.528);
 $color__background-header : rgb(0, 0, 0);
 $color__background-barre : rgb(0, 0, 0);
 $color__background-footer : hsl(225, 78%, 13%);
-$color__background-link : hsl(229, 64%, 70%);
-$color__background-link-hover : hsl(236, 64%, 44%);
+$color__background-link : hsl(229, 100%, 46%);
+$color__background-link-hover : hsl(236, 100%, 50%);
 
 /* ---------------- LIENS */
 $color__link : hsl(18, 27%, 38%);
 $color__link-hover : hsl(0, 0%, 100%);
-$color__link-visited : hsl(19, 29%, 28%);
+$color__link-visited : hsl(0, 100%, 23%);
 /* ---------------- LIENS FOOTER */
 $color__link__footer : hsl(0, 91%, 50%);
 $color__link__footer-hover : hsl(123, 80%, 49%);
@@ -25,12 +25,12 @@ $background__link__footer__menu: rgb(50, 122, 170);
 $background__link__footer__menu-visited: rgb(120, 120, 173); 
 $background__link__footer__menu-hover: rgb(160, 146, 199);
 /* ---------------- LIENS  DU MENU PRINCIPAL*/
-$color__link__principal__menu : #fff;
-$color__link__principal__menu-visited: #bbb;
-$color__link__principal__menu-hover:rgb(238, 255, 0);
-$background__link__principal__menu: rgba(rgb(140, 189, 223),.1);
-$background__link__principal__menu-visited: rgb(1, 1, 19); 
-$background__link__principal__menu-hover: rgb(41, 128, 155);
+$color__link__principal__menu : rgb(255, 255, 255);
+$color__link__principal__menu-visited: rgb(119, 0, 0);
+$color__link__principal__menu-hover:rgb(255, 0, 0);
+$background__link__principal__menu: rgba(rgb(0, 120, 206),.1);
+$background__link__principal__menu-visited: rgba(0, 43, 99, 0.419); 
+$background__link__principal__menu-hover: rgb(155, 41, 41);
 
 /* ---------------- LIENS HEADER titre principal du site */
 $color__link__header : hsl(0, 82%, 68%);
