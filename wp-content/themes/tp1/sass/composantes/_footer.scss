@@ -2,6 +2,7 @@
 .site__footer {
   display : flex;
   flex-direction: column;
+  color: $color__font-footer;
   &__colonne{
     display : flex;
     justify-content: space-between;

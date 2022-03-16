@@ -37,6 +37,7 @@ theme name: tp1
 .site__main{
     grid-area: main;
     background-color: rgba($color__background-main,.5);
+    color: $color__font-header;
 }
 
 .site__footer{

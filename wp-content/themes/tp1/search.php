@@ -12,6 +12,7 @@
     <?php endwhile ?>
     <?php else : ?>
         <p>Aucun résultat</p>
+        <?php get_search_form(); ?> 
     <?php endif ?>    
 </main>
 <?php get_footer(); ?>
