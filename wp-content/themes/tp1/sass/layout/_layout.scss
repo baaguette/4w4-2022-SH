@@ -1,18 +1,32 @@
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: tp1
 */
 
 .site {
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+    scroll-behavior: smooth;
+}
+.home::after {
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    top : 0;
+    bottom:0;
+    left:0;
+    right : 0;
+    background-color: $color__background-body-clip;
+    clip-path: polygon(95% 0, 100% 0, 100% 100%, 76% 100%);
+    z-index: -1;
 }
 
 
 
 .site__header{
     grid-area: header;  
-    background-color: $color__background-header;
+    background-color: rgba($color__background-header,.5);
 }
 
 .site__barre{
@@ -22,8 +36,8 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main{
     grid-area: main;
-    background-color: $color__background-main;
-    padding: 10px 15px 10px 15px;
+    background-color: rgba($color__background-main,.5);
+    color: $color__font-header;
 }
 
 .site__footer{
@@ -45,10 +59,10 @@ theme name: Lab 2 Lemieux Florence
 @media screen and (min-width : $largeur__media--tablette)
 {
     .site {
-        grid-template-columns: auto ($size__site-barre);
+        grid-template-columns: ($size__site-barre) auto;
         grid-template-areas:
             "header header"
-            " main sidebar"
+            "sidebar main"
             "footer footer";
     }
 }

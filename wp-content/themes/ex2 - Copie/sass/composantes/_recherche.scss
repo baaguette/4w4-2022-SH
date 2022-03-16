@@ -46,7 +46,9 @@ input:hover{
 
 
 //Animation loupe barre recherche
-
+&:hover{
+  animation: loupe 2s ease-in-out 0s infinite reverse none;
+}
 @keyframes loupe {
   0% {
     transform: translate(0);

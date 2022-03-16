@@ -2,7 +2,7 @@
 
 
     &__titre {
-        color : #f00;
+        color : $color__font-barre;
     }
 
     section{
@@ -12,4 +12,7 @@
         p{}
 
     }
+}
+.site__pageprincipale{
+    color: $color__font-barre;
 }

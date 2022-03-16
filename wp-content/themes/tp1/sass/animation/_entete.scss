@@ -9,35 +9,107 @@
         width : 100px;
         height : 100px;
         border-radius: 50%;
-        background-color: rgb(17, 97, 247);
+        background-color: rgb(25, 96, 228);
         color : #fff;
         font-size: 3rem;
-        transform: translateY(-100vh);  ;
-       //animation : anim-entete 1s forwards;
-        &:nth-of-type(1){
-            animation : anim-entete 1s 0s forwards;  
-        }
-        &:nth-of-type(2){
-            animation : anim-entete 1s .25s forwards; 
-        }
-        &:nth-of-type(3){
-            animation : anim-entete 1s .5s forwards;  
-        }
-        &:nth-of-type(4){
-            animation : anim-entete 1s .75s forwards;
-        }
-        &:nth-of-type(5){
-            animation : anim-entete 1s 1s forwards;
-        }
+        
+        animation : anim-entete 2s ease 0s infinite normal forwards;
     }
-    
 }
 
 @keyframes anim-entete {
     0% {
-      transform : translateY(-100vh);  
-    }
-    100% {
-        transform : translateY(0);  
-    }
+        transform: translate(0);
+      }
+    
+      10% {
+        transform: translate(-2px, -2px);
+      }
+    
+      20% {
+        transform: translate(2px, -2px);
+      }
+    
+      30% {
+        transform: translate(-2px, 2px);
+      }
+    
+      40% {
+        transform: translate(2px, 2px);
+      }
+    
+      50% {
+        transform: translate(-2px, -2px);
+      }
+    
+      60% {
+        transform: translate(2px, -2px);
+      }
+    
+      70% {
+        transform: translate(-2px, 2px);
+      }
+    
+      80% {
+        transform: translate(-2px, -2px);
+      }
+    
+      90% {
+        transform: translate(2px, -2px);
+      }
+    
+      100% {
+        transform: translate(0);
+      }
+}
+.recherche{
+  &:hover{
+    animation: loupe 2s ease-in-out 0s infinite reverse none;
+  }
+ 
+}
+@keyframes loupe {
+  0% {
+    transform: translate(0);
+  }
+
+  10% {
+    transform: translate(-2px, -2px);
+  }
+
+  20% {
+    transform: translate(2px, -2px);
+  }
+
+  30% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, 2px);
+  }
+
+  50% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, -2px);
+  }
+
+  70% {
+    transform: translate(-2px, 2px);
+  }
+
+  80% {
+    transform: translate(-2px, -2px);
+  }
+
+  90% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }

@@ -1,8 +1,8 @@
 /*
-theme name: groupe-1 eddy martin
-Author: Eddy martin
-Author URI: https://github.com/eddytuto
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+theme name: Tp1-SHebert
+Author: Sara Hébert
+Author URI: https://github.com/baaguette
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse:https://github.com/baaguette/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -34,13 +34,16 @@ COMPOSANTES
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/footer";
-@import "composantes/erreur_404";
+@import "composantes/404";
+@import "composantes/cours";
 @import "composantes/recherche";
 @import "composantes/single-post";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
+
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
