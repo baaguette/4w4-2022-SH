@@ -740,11 +740,12 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: tp1
 */
 .site {
   background-color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .home::after {
