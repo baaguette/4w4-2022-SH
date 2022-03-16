@@ -1,33 +1,33 @@
 /* ---------------- BACKGROUND */
 $color__background-body : rgb(0, 0, 0);
-$color__background-body-clip : rgb(208, 7, 0);
+$color__background-body-clip : rgb(0, 32, 158);
 $color__background-main : rgba(3, 88, 153, 0.412);
 $color__background-cours : rgba(255, 255, 255, 0.528);
-$color__background-header : rgb(0, 0, 0);
+$color__background-header : rgb(255, 0, 0);
 $color__background-barre : rgb(0, 0, 0);
-$color__background-footer : hsl(225, 78%, 13%);
-$color__background-link : hsl(229, 100%, 46%);
-$color__background-link-hover : hsl(236, 100%, 50%);
+$color__background-footer : rgb(0, 32, 158);
+$color__background-link : rgb(203, 212, 252);
+$color__background-link-hover : rgb(0, 17, 255);
 
 /* ---------------- LIENS */
-$color__link : hsl(18, 27%, 38%);
+$color__link : hsl(0, 0%, 100%);
 $color__link-hover : hsl(0, 0%, 100%);
-$color__link-visited : hsl(0, 100%, 23%);
+$color__link-visited : rgb(163, 0, 0);
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 91%, 50%);
-$color__link__footer-hover : hsl(123, 80%, 49%);
-$color__link__footer-visited : hsl(231, 84%, 50%);
+$color__link__footer : rgb(255, 0, 0);
+$color__link__footer-hover : rgb(25, 105, 225);
+$color__link__footer-visited : hsl(231, 100%, 35%);
 /* ---------------- LIENS DU MENU FOOTER*/
-$color__link__footer__menu : #fff;
-$color__link__footer__menu-visited: #bbb;
-$color__link__footer__menu-hover:#0f0;
+$color__link__footer__menu : rgb(0, 30, 255);
+$color__link__footer__menu-visited: hsl(0, 0%, 100%);
+$color__link__footer__menu-hover:rgb(255, 0, 0);
 $background__link__footer__menu: rgb(50, 122, 170);
-$background__link__footer__menu-visited: rgb(120, 120, 173); 
-$background__link__footer__menu-hover: rgb(160, 146, 199);
+$background__link__footer__menu-visited: rgb(146, 146, 146); 
+$background__link__footer__menu-hover: rgb(255, 255, 255);
 /* ---------------- LIENS  DU MENU PRINCIPAL*/
-$color__link__principal__menu : rgb(255, 255, 255);
-$color__link__principal__menu-visited: rgb(119, 0, 0);
-$color__link__principal__menu-hover:rgb(255, 0, 0);
+$color__link__principal__menu : rgb(255, 0, 0);
+$color__link__principal__menu-visited: rgba(0, 59, 187, 0.768);
+$color__link__principal__menu-hover:rgb(255, 255, 255);
 $background__link__principal__menu: rgba(rgb(0, 120, 206),.1);
 $background__link__principal__menu-visited: rgba(0, 43, 99, 0.419); 
 $background__link__principal__menu-hover: rgb(155, 41, 41);
