@@ -2,16 +2,11 @@
 <main class="site__main">
 <h1>Groupe #2</h1>
 <section class="animation">
-    <div class="animation__bloc">B</div>
-    <div class="animation__bloc">I</div>
-    <div class="animation__bloc">E</div>
-    <div class="animation__bloc">N</div>
-    <div class="animation__bloc">V</div>
-    <div class="animation__bloc">E</div>
-    <div class="animation__bloc">N</div>
-    <div class="animation__bloc">U</div>
-    <div class="animation__bloc">E</div>
-    
+    <div class="animation__bloc">1</div>
+    <div class="animation__bloc">2</div>
+    <div class="animation__bloc">3</div>
+    <div class="animation__bloc">4</div>
+    <div class="animation__bloc">5</div>
 </section>
 
     <h1>---- Front-page.php ------</h1>

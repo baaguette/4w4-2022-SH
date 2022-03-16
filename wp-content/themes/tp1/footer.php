@@ -2,22 +2,21 @@
     <!-- première rangé de colonne -->
     <div class="site__footer__colonne">
         <section class="footer__article">
-            <?php get_sidebar( 'footer_colonne_1' ); ?>
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
         </section>
         <section class="footer__adresse">
-            <?php get_sidebar( 'footer_colonne_2' ); ?>
+            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
         </section>
         <section class="footer__liens">
-            <?php get_sidebar( 'footer_colonne_3' ); ?>
+        <?php wp_nav_menu(array(
+                    "menu"=>"externe")); ?>
         </section>
     </div>
     <!-- section de plusieurs lignes -->
     <div class="site__footer__ligne">
         <section class="footer__description"></section>
         <section class="footer__nav"></section>
-        <section class="footer__sociaux">
-            <?php get_sidebar( 'footer_ligne_1' ); ?>
-        </section>
         <section class="copyright"></section>
         <section class="footer__auteur"></section>
     </div>
