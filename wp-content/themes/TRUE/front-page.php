@@ -1,17 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
 
-<section class="animation">
-    <div class="animation__bloc">B</div>
-    <div class="animation__bloc">I</div>
-    <div class="animation__bloc">E</div>
-    <div class="animation__bloc">N</div>
-    <div class="animation__bloc">V</div>
-    <div class="animation__bloc">E</div>
-    <div class="animation__bloc">N</div>
-    <div class="animation__bloc">U</div>
-    <div class="animation__bloc">E</div>
-</section>
+
 <h2>Le département TIM</h2>
 <?php wp_nav_menu(array(
         "menu"=> "accueil",
