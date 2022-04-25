@@ -20,8 +20,8 @@
         "label"=>"La couleur de background body"
     ]);
  })
-?>
-<!-- //   La méthode add_section( id de la section,
+
+//   La méthode add_section( id de la section,
 //                            [
 //                                "title" => "Le titre de la section"
 //                            ]);
@@ -37,4 +37,5 @@
 //   Pour utiliser une interface de couleur plus complexe on peut utiliser 
 //   La méthode add_control (new WP_Customize_Color_Control($manager, le nom de la variable php,
 //                         ["section"=>"le ID de la section",
-//                         "label"=>l'étiquette de la variable dans le formulaire  ])) -->
+//                         "label"=>l'étiquette de la variable dans le formulaire  ])) 
+?>
