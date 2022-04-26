@@ -38,7 +38,10 @@ h6{
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-p { font-size: clamp(1rem, 1.5vw, 1.5rem);}
+p {
+     font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 
 a {
      font-family: $police__h5 ;

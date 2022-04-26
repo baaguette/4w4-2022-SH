@@ -3,17 +3,38 @@
     top: 25%;
     left: 25%;
     border : 5px solid rgb(0, 0, 0);
-    background-color:  rgb(0, 157, 255);
+    background: rgb(24,0,106);
+    background: linear-gradient(0deg, rgba(24,0,106,1) 0%, rgba(45,191,253,1) 100%);
     color: $color__font-main;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: 9px 16px 100px 34px #000;
     width : 50%;
     height : 50%;
     transform : scale(0);
     transition : all 1s ease-in-out;
+
     &__fermeture {
-        
+        float: right;
+        box-shadow: 5px 3px 50px -9px #1b31c2;
+        background-color:#005eff;
+        border-radius:42px;
+        display:inline-block;
+        cursor:pointer;
+        font-size:18px;
+        font-weight:bold;
+        padding:9px 76px;
+        text-decoration:none;
+        text-shadow:2px 1px 3px #285566;
+        &:hover{
+            background-color:#054d57;
+        }
     }
-    &__texte{}
+    &__texte{
+        padding: 5%;
+        font-size: 30px;
+        
+
+
+    }
 
 }
     .ouvrir

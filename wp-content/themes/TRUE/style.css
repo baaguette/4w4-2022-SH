@@ -413,22 +413,22 @@ a:hover, a:active {
 
 h1, h2 {
   font-family: "Montserrat", sans-serif;
-  color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 h3, h4 {
   font-family: "Poppins", sans-serif;
-  color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 h5, h6 {
   font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 0);
+  color: #00d5ff;
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 h1 {
@@ -644,7 +644,7 @@ COMPOSANTES
 
 .menu-principal-container {
   padding: 30px 0 0 0;
-  background-color: #cbd4fc;
+  background-color: #002fff;
 }
 
 .menu-principal-container .menu {
@@ -913,13 +913,37 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   top: 25%;
   left: 25%;
   border: 5px solid black;
-  background-color: #009dff;
+  background: #18006a;
+  background: linear-gradient(0deg, #18006a 0%, #2dbffd 100%);
   color: black;
-  box-shadow: #26394d 0px 20px 30px -10px;
+  box-shadow: 9px 16px 100px 34px #000;
   width: 50%;
   height: 50%;
   transform: scale(0);
   transition: all 1s ease-in-out;
+}
+
+.boite__modale__fermeture {
+  float: right;
+  box-shadow: 5px 3px 50px -9px #1b31c2;
+  background-color: #005eff;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 76px;
+  text-decoration: none;
+  text-shadow: 2px 1px 3px #285566;
+}
+
+.boite__modale__fermeture:hover {
+  background-color: #054d57;
+}
+
+.boite__modale__texte {
+  padding: 5%;
+  font-size: 30px;
 }
 
 .ouvrir {
