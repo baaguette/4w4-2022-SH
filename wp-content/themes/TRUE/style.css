@@ -480,7 +480,7 @@ COMPOSANTES
 }
 
 .formation__titre {
-  color: white;
+  color: black;
   margin: 10px 0px;
 }
 
@@ -518,7 +518,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: rgba(255, 255, 255, 0.528);
+  background-color: rgba(0, 8, 245, 0.528);
   background-position: 97% 3%;
   background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
@@ -548,7 +548,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: white;
+  color: black;
   margin: 5px 0px;
 }
 
@@ -564,7 +564,7 @@ COMPOSANTES
 
 .site__header {
   background-color: #003cff;
-  color: white;
+  color: black;
   padding-left: 10px;
   display: flex;
   align-items: flex-start;
@@ -773,7 +773,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #00209e;
-  color: white;
+  color: black;
   padding: 15px;
 }
 
@@ -912,8 +912,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   position: fixed;
   top: 25%;
   left: 25%;
-  border: 5px solid #aaa;
-  background-color: #f00;
+  border: 5px solid black;
+  background-color: #009dff;
+  color: black;
+  box-shadow: #26394d 0px 20px 30px -10px;
   width: 50%;
   height: 50%;
   transform: scale(0);
