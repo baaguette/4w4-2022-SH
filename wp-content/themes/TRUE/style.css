@@ -371,7 +371,7 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: red;
+  color: #00bbff;
 }
 
 .site__footer a:visited {
@@ -900,7 +900,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
-  color: red;
+  color: #00bbff;
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
