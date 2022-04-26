@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AAAD,iBAAU,CAAA;EACN,OAAO,EAAE,IAAI;CAEhB",
-    "sources": [
-        "composantes/cours.scss"
-    ],
-    "names": [],
-    "file": "cours.css"
-}
