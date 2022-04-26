@@ -1,6 +1,6 @@
 <?php 
 
-require_once("options/apparences.php");
+require_once("options/apparence.php");
 
 /* --------------------------------------------------------------------  add_theme_support() */
 function cidw_4w4_add_theme_support(){
