@@ -1,26 +1,25 @@
 .site__main {
     
-  
+    padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
 
-.formation {  
-    padding: 10px 15px;
+.formation {
     display: flex;
     flex-direction: column;
 
     &__titre {
-        
+        font-size: 2rem;
         color: $color__font-main;
         margin: 10px 0px;
-     
+        font-family: $font__titre;
     }
-
     &__liste {
         display: flex;
         flex-wrap: wrap;
+  
         .web{
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
         }
@@ -51,19 +50,20 @@
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
             
         }
-
     }
-    
     &__cours {
-        background-repeat: no-repeat;
-        background-position: 97% 3%;
         background-color: $color__background-cours;
+        background-position: 97% 3%;
+        background-repeat: no-repeat;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 5px;
         margin: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
+        &__invisible {
+            display : none;
+        }  
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
         }
