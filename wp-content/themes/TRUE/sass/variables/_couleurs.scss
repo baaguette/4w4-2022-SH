@@ -1,11 +1,11 @@
 /* ---------------- BACKGROUND */
 $color__background-body : rgb(0, 0, 0);
 $color__background-body-clip : rgb(0, 32, 158);
-$color__background-main : rgba(3, 88, 153, 0.412);
+$color__background-main : rgba(0, 0, 0, 0.239);
 $color__background-cours : rgba(0, 8, 245, 0.528);
 $color__background-header : rgb(0, 60, 255);
 $color__background-barre : rgb(0, 0, 0);
-$color__background-footer : rgb(0, 32, 158);
+$color__background-footer : rgb(0, 0, 0);
 $color__background-link : rgb(0, 47, 255);
 $color__background-link-hover : rgb(0, 17, 255);
 
@@ -38,10 +38,10 @@ $color__link__header-hover : rgb(139, 220, 229);
 $color__link__header-visited : rgb(255, 255, 255);
 
 /* ---------------- FONT */
-$color__font-header : rgb(0, 0, 0);
-$color__font-main :rgb(0, 0, 0);
-$color__font-barre : rgb(0, 0, 0);
-$color__font-footer : rgb(0, 0, 0);
+$color__font-header : rgb(255, 255, 255);
+$color__font-main :rgb(255, 255, 255);
+$color__font-barre : rgb(255, 255, 255);
+$color__font-footer : rgb(255, 255, 255);
 
 /*  Bouton lien menu*/
 $color__bouton__color: rgb(0, 81, 255);
