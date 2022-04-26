@@ -873,7 +873,6 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
   flex: 0 0 30%;
 }
 
