@@ -28,7 +28,14 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                          "label"=>"choisir la couleur d'arrière"
     
     
+                    ]));            
+    $manager ->add_control(new WP_Customize_Color_Control($manager, 'background_',
+                         ["section"=>"apparence_body",
+                         "label"=>"choisir la couleur du clip path"
+    
+    
                     ]));                              
+                  
 
 });
 
