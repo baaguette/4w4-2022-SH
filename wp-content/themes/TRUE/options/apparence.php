@@ -18,11 +18,17 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                            "sanitize_callback"=>"sanitize_hex_color"
                         ]);  
 
-    $manager->add_control('background_body',
-                        ["section"=>"apparence_body",
-                        "setting"=>"background_body",
-                        "label"=>"La couleur du background body "
-                    ]);                                          
+    // $manager->add_control('background_body',
+    //                     ["section"=>"apparence_body",
+    //                     "setting"=>"background_body",
+    //                     "label"=>"La couleur du background body "
+    //                 ]);          
+    $manager ->add_control(new WP_Customize_Color_Control($manager, 'background_body',
+                         ["section"=>"apparence_body",
+                         "label"=>"choisir la couleur d'arrière"
+    
+    
+                    ]));                              
 
 });
 
