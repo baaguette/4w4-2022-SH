@@ -1,38 +1,39 @@
 .site {
     //background-color: rgb(122, 176, 207);
-    // background-color: $color__background-body;
+    background-color: $color__background-body;
     font-family: $font__main;
+    position : relative;
 }
-
-.home::after{
-    position : absolute;
+.home::after {
     content : "";
+    position : absolute;
     width : 100%;
     height : 100%;
-    top:0;
+    top : 0;
     bottom:0;
     left:0;
-    right:0;
-    clip-path: polygon(83% 0, 100% 0, 100% 100%, 63% 100%);
-    // background-color:$color__background-body-clip ;
-    z-index : -1;
+    right : 0;
+    background-color: $color__background-body-clip;
+    
+    clip-path: polygon(95% 0, 100% 0, 100% 100%, 76% 100%);
+    z-index: -1;
 }
+
 
 
 .site__header{
     grid-area: header;  
-    // background-color: rgba($color__background-header, .5);
+    background-color: rgba($color__background-header,.5);
 }
 
 .site__barre{
     grid-area: sidebar;
-    // background-color: rgba($color__background-barre, .5);
+    background-color: $color__background-barre;
 }
 
 .site__main{
     grid-area: main;
-    // background-color: rgba($color__background-main,.5);
-    padding: 10px 15px 10px 15px;
+    background-color: rgba($color__background-main,.5);
 }
 
 .site__footer{
@@ -42,7 +43,7 @@
 
 .site {
 	display: grid;
-    gap : 10px;
+    //gap : 10px;
 	grid-template-columns: auto;
 	grid-template-areas:
 		"sidebar"
@@ -54,16 +55,16 @@
 @media screen and (min-width : $largeur__media--tablette)
 {
     .site {
-        grid-template-columns: auto ($size__site-barre);
+        grid-template-columns: ($size__site-barre) auto;
         grid-template-areas:
             "header header"
-            " main sidebar"
+            "sidebar main"
             "footer footer";
     }
 
     .home {
         display: grid;
-        gap : 0px;
+        //gap : 10px;
         grid-template-columns: auto;
         grid-template-areas:
             "sidebar"
@@ -71,6 +72,6 @@
             "main"
             "footer";
     }
+
+
 }
-
-

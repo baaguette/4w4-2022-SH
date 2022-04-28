@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
     <style>
-        .site__header{
+        .home::after{
             background-color: <?php get_theme_mod( 'background_clippath') ?>;;
         }
     </style>
