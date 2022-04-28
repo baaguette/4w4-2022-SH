@@ -17,6 +17,10 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                           ["default"=>"#ffffff",
                            "sanitize_callback"=>"sanitize_hex_color"
                         ]);  
+    $manager->add_setting('background_clippath',
+                          ["default"=>"#ffffff",
+                           "sanitize_callback"=>"sanitize_hex_color"
+                        ]);  
 
     // $manager->add_control('background_body',
     //                     ["section"=>"apparence_body",
@@ -29,10 +33,9 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
     
     
                     ]));            
-    $manager ->add_control(new WP_Customize_Color_Control($manager, 'background_',
+    $manager ->add_control(new WP_Customize_Color_Control($manager, 'background_clippath',
                          ["section"=>"apparence_body",
-                         "label"=>"choisir la couleur du clip path"
-    
+                         "label"=>"choisir la couleur du header"
     
                     ]));                              
                   

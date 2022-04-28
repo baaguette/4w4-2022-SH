@@ -1103,23 +1103,19 @@ LAYOUT
   left: 0;
   right: 0;
   clip-path: polygon(83% 0, 100% 0, 100% 100%, 63% 100%);
-  background-color: #00209e;
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgba(0, 60, 255, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 15px 10px 15px;
 }
 
