@@ -990,7 +990,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-color: #9fa2d2;
 }
 
-.boite__modale {
+.boite__modale .boite__carrousel {
   position: fixed;
   top: 25%;
   left: 25%;
@@ -1005,7 +1005,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   transition: all 1s ease-in-out;
 }
 
-.boite__modale__fermeture {
+.boite__modale .boite__carrousel__fermeture {
   float: right;
   box-shadow: 5px 3px 50px -9px #1b31c2;
   background-color: #005eff;
@@ -1019,17 +1019,55 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   text-shadow: 2px 1px 3px #285566;
 }
 
-.boite__modale__fermeture:hover {
+.boite__modale .boite__carrousel__fermeture:hover {
   background-color: #054d57;
 }
 
-.boite__modale__texte {
+.boite__modale .boite__carrousel__texte {
   padding: 5%;
   font-size: 30px;
 }
 
 .ouvrir {
   transform: scale(1);
+}
+
+/* Les dimensions de la boîte carrousel */
+.boite__carrousel {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid red;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: #000;
+}
+
+.boite__carrousel__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* ---------------------------------------------------------
