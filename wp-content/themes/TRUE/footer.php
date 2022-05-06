@@ -50,8 +50,11 @@ wp_nav_menu(array(
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
     <p class="boite__modale__texte">
-        Ceci est un premier test de boîte modale
     </p>
+    <div class="boite__carrousel">
+    <button class="boite__carrousel__ferme">X</button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
 </div>
 <?php wp_footer(); ?>
 </body>
