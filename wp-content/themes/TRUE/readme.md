@@ -1,10 +1,14 @@
-# 4w4 - Conception d'interface et développement Web
-### Auteur : Sara
-### Lab4
-### Utilisation de l'engin de recherche de WP
-###### get_home_url('/')
-###### get_search_query()
-###### get_search_form()
+# Exrcice #1 - 4W4 - Conception d'interface et développement Web
+### Auteur : Eddy Martin
+### Date de remise : 11 février 2022
 
-Site web - wordpress
-travail étudiant
+```
+Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
+-Pour le style css nous avons utilisé Sass
+-Les fonctions du thème se trouvent dans «functions.php»
+-Les modèle principal est : «index.php»
+
+Github page : https://eddytuto.github.io/4w4-gr2/
+
+Pour modifier readme.md
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
