@@ -3,6 +3,7 @@
   background-color: $color__background-footer;
   color : $color__font-footer;
   padding: 15px;
+  align-items: center;
   &__colonne{ // .site__footer__colonne
     display: flex;
     justify-content: space-between;
@@ -60,19 +61,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
@@ -87,5 +75,5 @@
   color: $color__font-footer;
   text-align: center;
 }
-*/
+
 
