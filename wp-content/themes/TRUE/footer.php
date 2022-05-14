@@ -2,13 +2,13 @@
     <!-- première rangé de colonne
     <div class="site__footer__colonne">
         <section class="footer__article">
-            <?php get_sidebar( 'footer_colonne_1' ); ?>
+           <?php //get_sidebar( 'footer_colonne_1' ); ?>
         </section>
         <section class="footer__adresse">
-            <?php get_sidebar( 'footer_colonne_2' ); ?>
+            <?php // get_sidebar( 'footer_colonne_2' ); ?>
         </section>
         <section class="footer__liens">
-            <?php get_sidebar( 'footer_colonne_3' ); ?>
+            <?php //get_sidebar( 'footer_colonne_3' ); ?>
         </section>
     </div> -->
     <!-- section de plusieurs lignes -->
