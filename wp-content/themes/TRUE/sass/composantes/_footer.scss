@@ -4,6 +4,11 @@
   color : $color__font-footer;
   padding: 15px;
   align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  position:absolute;
+  
   &__colonne{ // .site__footer__colonne
     display: flex;
     justify-content: space-between;
@@ -26,8 +31,6 @@
       
     }
     .footer__description{}
-    .footer__auteur{}
-    .footer__copyright{}
     .footer__menu{
       &__nav{ // .site__footer__menu
 

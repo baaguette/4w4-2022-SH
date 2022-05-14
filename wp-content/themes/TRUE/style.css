@@ -880,6 +880,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   color: white;
   padding: 15px;
   align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  position: absolute;
 }
 
 .site__footer__colonne {
