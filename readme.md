@@ -10,5 +10,6 @@ Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voic
 
 Github page : https://github.com/baaguette/4w4-2022-SH/tree/main
 
+
 Pour modifier readme.md
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
