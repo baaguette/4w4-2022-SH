@@ -1,0 +1,89 @@
+/* --------------------------------------------------------------
+Navigation pour la page category.php   boutons de catégorie  groupe-1
+----------------------------------------------------------------- */
+.menu-categorie_cours-container
+{ //nav
+
+    .menu {  //ul
+        display : flex;
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+     
+        .menu-item { //li
+             a {
+                 padding : 5px 10px;
+                 text-decoration: none;
+             }
+        }
+
+        .current-menu-item {
+            
+            a{
+                color :$color__bouton__color;
+                background-color:$color__bouton__background ;
+            }
+            
+        }
+    }
+}
+.assdess{
+    padding: 3px;
+    margin-left: 85%;
+    .up{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+	background-color:#c42020;
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+    font-size:35px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+    }
+    .down{
+        box-shadow: 3px 4px 0px 0px #218a3d;
+        background-color:#21c24c;
+        border-radius:18px;
+        border:1px solid #19cf34;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:35px;
+        padding:7px 25px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #058026;
+    }
+}
+.radiobutton{
+    color: $color__titre__principale;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 25px;
+    .radio{
+        font-size: 25px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        
+    }
+    input[type='radio']:checked { 
+        transform: scale(2); 
+    }
+    input[type='radio'] { 
+        transform: scale(1); 
+    }
+  
+}

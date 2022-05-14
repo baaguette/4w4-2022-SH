@@ -1,0 +1,1323 @@
+@charset "UTF-8";
+/*
+theme name: 2022-4W4 TP2 S-Hebert
+Author: Sara Hébert
+Author URI: https://github.com/baaguette
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/baaguette
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+/* ---------------- BACKGROUND */
+/* ---------------- LIENS */
+/* ---------------- LIENS FOOTER */
+/* ---------------- LIENS DU MENU FOOTER*/
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
+/* ---------------- LIENS HEADER titre principal du site */
+/* ---------------- FONT */
+/*  Bouton lien menu*/
+/*  couleur texte*/
+/* ------------------------------------- points de rupture des media queries */
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover, a:focus, a:active {
+  color: #00eeff;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: #00bbff;
+}
+
+.site__footer a:visited {
+  color: white;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #00eeff;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.header__titre a {
+  color: #0a60ff;
+  font-size: clamp(4rem, 2vw, 9rem);
+}
+
+.header__titre a:visited {
+  color: white;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #00eeff;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+  color: #00d5ff;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+.site__main {
+  background-color: rgba(0, 0, 0, 0.239);
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+}
+
+.formation {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formation__titre {
+  color: white;
+  margin: 10px 0px;
+}
+
+.formation__liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.formation__cours {
+  background-color: rgba(0, 8, 245, 0.528);
+  background-position: 97% 3%;
+  background-repeat: no-repeat;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.formation__cours__invisible {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
+}
+
+.cours__desc__ouvrir {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-left: 35%;
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 25px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  cursor: pointer;
+}
+
+.cours__desc__ouvrir:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+
+.cours__titre {
+  font-size: 1.5rem;
+  color: white;
+  margin: 5px 0px;
+}
+
+.cours__sigle {
+  font-size: 1.2rem;
+  color: #8a5353;
+  margin: 0;
+}
+
+.cours__description {
+  font-size: 1rem;
+}
+
+.site__header {
+  background-color: #003cff;
+  color: white;
+  padding-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.custom-logo-link, .header__titre, .header__description {
+  padding-left: 35px;
+}
+
+.header__titre {
+  font-size: clamp(3rem, 4vw, 6rem);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.header__description {
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+svg:hover {
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@keyframes shake-bottom {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .util {
+    width: 300px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+.util__menu {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#burger {
+  z-index: 99;
+}
+
+#chk-burger {
+  display: none;
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 2%;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 25px;
+  margin-left: 25px;
+  list-style-type: none;
+}
+
+.menu-item:hover {
+  background-color: #0f5dab;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+    padding: 20px;
+    box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+    width: 280px;
+    font-size: 20px;
+    .menu-item:hover {
+      color: #00eeff;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .site #burger {
+    display: none;
+  }
+  .site .menu-principal-container {
+    display: block;
+  }
+  /* ----------------------------------------- */
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
+}
+
+.menu-accueil-container .menu, .menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.menu-accueil-container .menu .accueil__journee .menu-item-icone, .menu-evenement-container .menu .accueil__journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__porte__1 .menu-item-icone, .menu-evenement-container .menu .accueil__porte__1 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__porte__2 .menu-item-icone, .menu-evenement-container .menu .accueil__porte__2 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__projet .menu-item-icone, .menu-evenement-container .menu .accueil__projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+  height: 175px;
+  padding-top: 10px;
+  box-shadow: 10px 10px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* --------------------------------------------------------------
+Navigation pour la page category.php   boutons de catégorie  groupe-1
+----------------------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #0051ff;
+  background-color: #0000;
+}
+
+.assdess {
+  padding: 3px;
+  margin-left: 85%;
+}
+
+.assdess .up {
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+  background-color: #c42020;
+  background-color: #c62d1f;
+  border-radius: 18px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 35px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+
+.assdess .down {
+  box-shadow: 3px 4px 0px 0px #218a3d;
+  background-color: #21c24c;
+  border-radius: 18px;
+  border: 1px solid #19cf34;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 35px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #058026;
+}
+
+.radiobutton {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  padding: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 25px;
+}
+
+.radiobutton .radio {
+  font-size: 25px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.radiobutton input[type='radio']:checked {
+  transform: scale(2);
+}
+
+.radiobutton input[type='radio'] {
+  transform: scale(1);
+}
+
+.site__footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  position: absolute;
+}
+
+.site__footer__colonne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__footer__ligne .footer__menu__nav__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.site__footer__ligne .footer__menu__nav__ul .menu-item {
+  margin: 10px 5px;
+}
+
+.site__footer__ligne .footer__menu__nav__ul .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
+  color: #00bbff;
+}
+
+.site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
+  color: #1969e1;
+}
+
+.site__footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: black;
+  padding: 15px;
+}
+
+.footer__titre,
+.footer__presentation,
+.footer__author {
+  color: white;
+  text-align: center;
+}
+
+.erreur-404 {
+  background-color: black;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+}
+
+.erreur-404 h2 {
+  font-size: 2rem;
+}
+
+.erreur-404 p {
+  font-size: 1rem;
+}
+
+.recherche {
+  display: flex;
+  height: 30px;
+}
+
+.recherche__text {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color .5s;
+  width: 100%;
+}
+
+.recherche__text:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 700px) {
+  .recherche__text {
+    width: 300px;
+  }
+}
+
+.recherche__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.recherche__submit svg {
+  color: #000;
+}
+
+.cours__titre {
+  color: #0048ff;
+}
+
+.cours section {
+  display: flex;
+}
+
+.evenement {
+  background-color: #3048d2;
+}
+
+.evenement__resume {
+  background-color: #bbb;
+}
+
+.evenement__organisateur {
+  background-color: #9fa2d2;
+}
+
+.boite__modale, .boite__carrousel {
+  /**
+    * les deux boîtes modales   sont contrôlés en javascript par 
+    * boite-modele.js et carrousel.js
+    */
+  /* Spécifiquement les dimensions de la boite__modale */
+  /* la boite__carrousel */
+}
+
+.boite__modale .boite__modale, .boite__modale .boite__carrousel, .boite__carrousel .boite__modale, .boite__carrousel .boite__carrousel {
+  position: fixed;
+  background-color: #4ebef2;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.boite__modale .boite__modale__fermeture, .boite__modale .boite__carrousel__fermeture, .boite__carrousel .boite__modale__fermeture, .boite__carrousel .boite__carrousel__fermeture {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.boite__modale .ouvrir, .boite__carrousel .ouvrir {
+  transform: scale(1);
+}
+
+.boite__modale .ouvrir, .boite__carrousel .ouvrir {
+  transform: scale(1);
+}
+
+.boite__modale .boite__modale, .boite__carrousel .boite__modale {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.boite__modale .boite__carrousel, .boite__carrousel .boite__carrousel {
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale .boite__carrousel, .boite__carrousel .boite__carrousel {
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+.boite__modale .boite__carrousel__img, .boite__carrousel .boite__carrousel__img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__modale .boite__carrousel__img img, .boite__carrousel .boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.boite__modale .boite__carrousel__img img.img--ouvrir, .boite__carrousel .boite__carrousel__img img.img--ouvrir {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation, .boite__carrousel .boite__carrousel__navigation__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation .bouton .bouton, .boite__carrousel .boite__carrousel__navigation__navigation .bouton .bouton {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 100%;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation .bouton .bouton:focus, .boite__carrousel .boite__carrousel__navigation__navigation .bouton .bouton:focus {
+  background-color: black;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1161f7;
+  color: #fff;
+  font-size: 3rem;
+  transform: translateY(-100vh);
+}
+
+.animation__bloc:nth-of-type(1) {
+  animation: anim-entete 1s 0s forwards;
+}
+
+.animation__bloc:nth-of-type(2) {
+  animation: anim-entete 1s .25s forwards;
+}
+
+.animation__bloc:nth-of-type(3) {
+  animation: anim-entete 1s .5s forwards;
+}
+
+.animation__bloc:nth-of-type(4) {
+  animation: anim-entete 1s .75s forwards;
+}
+
+.animation__bloc:nth-of-type(5) {
+  animation: anim-entete 1s 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.burger {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transition: all .25s ease-in-out;
+}
+
+.burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+.burger:hover .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+  background-color: #00209e;
+}
+
+.burger:hover .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+  opacity: 0;
+  background-color: #00209e;
+}
+
+.burger:hover .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+  background-color: #00209e;
+}
+
+.burger__X .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+  background-color: #00209e;
+}
+
+.burger__X .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+  background-color: #00209e;
+  opacity: 0;
+}
+
+.burger__X .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+  background-color: #00209e;
+}
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+.site {
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: polygon(95% 0, 100% 0, 100% 100%, 76% 100%);
+  z-index: -1;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #003cff;
+}
+
+.site__barre {
+  grid-area: sidebar;
+  background-color: black;
+}
+
+.site__main {
+  grid-area: main;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10%;
+  padding-top: 10px;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: black;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */

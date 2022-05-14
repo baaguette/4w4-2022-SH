@@ -1,0 +1,56 @@
+/* ---------------- BACKGROUND */
+$color__background-body : rgb(0, 0, 0);
+$color__background-body-clip : rgb(0, 32, 158);
+$color__background-main : rgba(0, 0, 0, 0.239);
+$color__background-cours : rgba(0, 8, 245, 0.528);
+$color__background-header : rgb(0, 60, 255);
+$color__background-barre : rgb(0, 0, 0);
+$color__background-footer : rgb(0, 0, 0);
+$color__background-link : rgb(0, 47, 255);
+$color__background-link-hover : rgb(0, 17, 255);
+
+/* ---------------- LIENS */
+$color__link : rgb(255, 255, 255);
+$color__link-hover : rgb(0, 238, 255);
+$color__link-visited : rgb(255, 255, 255);
+/* ---------------- LIENS FOOTER */
+$color__link__footer : rgb(0, 187, 255);
+$color__link__footer-hover : rgb(25, 105, 225);
+$color__link__footer-visited : #ffffff;
+/* ---------------- LIENS DU MENU FOOTER*/
+$color__link__footer__menu : rgb(0, 81, 232);
+$color__link__footer__menu-visited: rgb(255, 255, 255);
+$color__link__footer__menu-hover:rgb(0, 145, 255);
+$background__link__footer__menu: rgb(50, 122, 170);
+$background__link__footer__menu-visited: rgb(0, 0, 0); 
+$background__link__footer__menu-hover: rgb(255, 255, 255);
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
+$color__link__principal__menu : rgb(0, 166, 255);
+$color__link__principal__menu-visited: rgba(0, 75, 187, 0.768);
+$color__link__principal__menu-hover:rgb(255, 255, 255);
+$background__link__principal__menu: rgba(rgb(0, 120, 206),.1);
+$background__link__principal__menu-visited: rgba(0, 43, 99, 0.419); 
+$background__link__principal__menu-hover: rgb(50, 120, 185);
+
+/* ---------------- LIENS HEADER titre principal du site */
+$color__link__header : rgb(10, 96, 255);
+$color__link__header-hover : rgb(139, 220, 229);
+$color__link__header-visited : rgb(255, 255, 255);
+
+/* ---------------- FONT */
+$color__font-header : rgb(255, 255, 255);
+$color__font-main :rgb(255, 255, 255);
+$color__font-barre : rgb(255, 255, 255);
+$color__font-footer : rgb(255, 255, 255);
+
+/*  Bouton lien menu*/
+$color__bouton__color: rgb(0, 81, 255);
+$color__bouton__background:#0000;
+$color__bouton__color-hover:rgba(255, 255, 255, 0);
+$color__bouton__background-hover:rgb(0, 4, 121);
+
+/*  couleur texte*/
+$color__paragraphe: rgb(255, 255, 255);
+$color__titre__ternaire: rgb(0, 213, 255);
+$color__titre__secondaire:rgb(255, 255, 255);
+$color__titre__principale:rgb(255, 255, 255);
