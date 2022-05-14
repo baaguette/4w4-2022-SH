@@ -2,6 +2,7 @@
 ### Auteur : Sara Hébert
 ### Date de remise : 13 mai 2022
 
+
 ```
 Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
 -Pour le style css nous avons utilisé Sass
@@ -9,6 +10,7 @@ Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voic
 -Les modèle principal est : «index.php»
 
 Github page : https://github.com/baaguette/4w4-2022-SH/tree/main
+
 
 
 Pour modifier readme.md
