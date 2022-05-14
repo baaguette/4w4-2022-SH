@@ -2,7 +2,7 @@
 <main class="site__main">
 
 
-<h2>Le département TIM</h2>
+<h1>Le département TIM</h1>
 <?php wp_nav_menu(array(
         "menu"=> "accueil",
         "container" => "nav")); ?>
@@ -12,7 +12,7 @@
         "container" => "nav")); ?>        
     <h1>Page principale</h1>
    <?php if (have_posts()): the_post(); ?>
-   <h1>  <?php the_title() ?></h1>
+   <h2>  <?php the_title() ?></h2>
         <?php the_content() ?>   
   
    <?php endif ?>

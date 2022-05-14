@@ -20,11 +20,12 @@
 
 }
 .custom-logo-link, .header__titre,.header__description {
-  padding-left : 20px;
+  padding-left : 35px;
 }
 .header__titre {
       font-size: clamp(3rem, 4vw, 6rem);
       font-family: $font__titre;
+      
 }
 .header__description {
       font-size: clamp(2rem, 2vw, 4rem);

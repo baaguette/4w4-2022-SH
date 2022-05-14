@@ -609,7 +609,7 @@ COMPOSANTES
 }
 
 .custom-logo-link, .header__titre, .header__description {
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 .header__titre {
@@ -1196,9 +1196,9 @@ ANIMATION
 }
 
 .burger {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
   background-color: transparent;
   border-radius: 100%;
   overflow: hidden;
@@ -1210,7 +1210,7 @@ ANIMATION
   height: 100%;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: white;
   transition: all .25s ease-in-out;
 }
 
@@ -1228,28 +1228,34 @@ ANIMATION
 
 .burger:hover .burger__ligne:nth-of-type(1) {
   clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+  background-color: #00209e;
 }
 
 .burger:hover .burger__ligne:nth-of-type(2) {
   clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
   opacity: 0;
+  background-color: #00209e;
 }
 
 .burger:hover .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+  background-color: #00209e;
 }
 
 .burger__X .burger__ligne:nth-of-type(1) {
   clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+  background-color: #00209e;
 }
 
 .burger__X .burger__ligne:nth-of-type(2) {
   clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+  background-color: #00209e;
   opacity: 0;
 }
 
 .burger__X .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+  background-color: #00209e;
 }
 
 /* ---------------------------------------------------------
