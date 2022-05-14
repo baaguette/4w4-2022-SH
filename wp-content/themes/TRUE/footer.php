@@ -1,5 +1,5 @@
 <footer class="site__footer">
-    <!-- première rangé de colonne -->
+    <!-- première rangé de colonne
     <div class="site__footer__colonne">
         <section class="footer__article">
             <?php get_sidebar( 'footer_colonne_1' ); ?>
@@ -10,13 +10,13 @@
         <section class="footer__liens">
             <?php get_sidebar( 'footer_colonne_3' ); ?>
         </section>
-    </div>
+    </div> -->
     <!-- section de plusieurs lignes -->
     <div class="site__footer__ligne">
         <section class="footer__description"></section>
         <section class="footer__nav"></section>
         <section class="footer__sociaux">
-            <?php get_sidebar( 'footer_ligne_1' ); ?>
+         <?php // get_sidebar( 'footer_ligne_1' ); ?>
         </section>
         <section class="copyright"></section>
         <section class="footer__auteur"></section>
