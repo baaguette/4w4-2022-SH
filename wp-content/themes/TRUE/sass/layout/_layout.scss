@@ -32,6 +32,8 @@
 .site__main{
     grid-area: main;
     background-color: rgba($color__background-main,.5);
+    padding: 10%;
+    padding-top: 10px;
 }
 
 .site__footer{

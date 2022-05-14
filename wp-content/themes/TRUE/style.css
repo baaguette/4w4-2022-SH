@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: tp2-soon
+theme name: shebert
 Author: shebert
 Author URI: https://github.com/baaguette
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/baaguette
@@ -990,84 +990,108 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   background-color: #9fa2d2;
 }
 
-.boite__modale .boite__carrousel {
+.boite__modale, .boite__carrousel {
+  /**
+    * les deux boîtes modales   sont contrôlés en javascript par 
+    * boite-modele.js et carrousel.js
+    */
+  /* Spécifiquement les dimensions de la boite__modale */
+  /* la boite__carrousel */
+}
+
+.boite__modale .boite__modale, .boite__modale .boite__carrousel, .boite__carrousel .boite__modale, .boite__carrousel .boite__carrousel {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  border: 5px solid black;
-  background: #18006a;
-  background: linear-gradient(0deg, #18006a 0%, #2dbffd 100%);
-  color: white;
-  box-shadow: 9px 16px 100px 34px #000;
-  width: 50%;
-  height: 50%;
+  border: 5px solid #aaa;
+  background-color: #3c444b;
   transform: scale(0);
   transition: all 1s ease-in-out;
 }
 
-.boite__modale .boite__carrousel__fermeture {
-  float: right;
-  box-shadow: 5px 3px 50px -9px #1b31c2;
-  background-color: #005eff;
-  border-radius: 42px;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 9px 76px;
-  text-decoration: none;
-  text-shadow: 2px 1px 3px #285566;
-}
-
-.boite__modale .boite__carrousel__fermeture:hover {
-  background-color: #054d57;
-}
-
-.boite__modale .boite__carrousel__texte {
-  padding: 5%;
-  font-size: 30px;
-}
-
-.ouvrir {
-  transform: scale(1);
-}
-
-/* Les dimensions de la boîte carrousel */
-.boite__carrousel {
-  width: 75%;
-  height: 75%;
-  top: 12.5%;
-  left: 12.5%;
-}
-
-.boite__carrousel__navigation {
+.boite__modale .boite__modale__fermeture, .boite__modale .boite__carrousel__fermeture, .boite__carrousel .boite__modale__fermeture, .boite__carrousel .boite__carrousel__fermeture {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-  width: 100%;
-  border: 2px solid red;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
   z-index: 1;
 }
 
-.boite__carrousel__navigation button {
-  width: 20px;
-  height: 20px;
-  margin: 5px 10px;
-  border-radius: 100%;
+.boite__modale .ouvrir, .boite__carrousel .ouvrir {
+  transform: scale(1);
 }
 
-.boite__carrousel__navigation button:focus {
-  background-color: #000;
+.boite__modale .ouvrir, .boite__carrousel .ouvrir {
+  transform: scale(1);
 }
 
-.boite__carrousel__img {
+.boite__modale .boite__modale, .boite__carrousel .boite__modale {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.boite__modale .boite__carrousel, .boite__carrousel .boite__carrousel {
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale .boite__carrousel, .boite__carrousel .boite__carrousel {
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
+  }
+}
+
+.boite__modale .boite__carrousel__img, .boite__carrousel .boite__carrousel__img {
   position: absolute;
+  overflow: hidden;
   top: 0;
-  bottom: 0;
+  left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.boite__modale .boite__carrousel__img img, .boite__carrousel .boite__carrousel__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.boite__modale .boite__carrousel__img img.img--ouvrir, .boite__carrousel .boite__carrousel__img img.img--ouvrir {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation, .boite__carrousel .boite__carrousel__navigation__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation .bouton .bouton, .boite__carrousel .boite__carrousel__navigation__navigation .bouton .bouton {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 100%;
+}
+
+.boite__modale .boite__carrousel__navigation__navigation .bouton .bouton:focus, .boite__carrousel .boite__carrousel__navigation__navigation .bouton .bouton:focus {
+  background-color: black;
 }
 
 /* ---------------------------------------------------------
@@ -1212,6 +1236,8 @@ LAYOUT
 .site__main {
   grid-area: main;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 10%;
+  padding-top: 10px;
 }
 
 .site__footer {
@@ -1222,26 +1248,18 @@ LAYOUT
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header"
- "sidebar main"
- "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
   .home {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
