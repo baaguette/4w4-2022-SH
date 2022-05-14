@@ -7,7 +7,6 @@
    * 
    *  */ 
   console.log("vive la boîte carousel");
- 
  /* Le conteneur de la gallerie */
   let boite__carrousel = document.querySelector(".boite__carrousel")
   /* le conteneur des bouton de navigation du carrousel */
@@ -16,10 +15,8 @@
   let boite__carrousel__fermeture = document.querySelector(".boite__carrousel__fermeture")
   /* Conteneur d'image du carrousel */
   let boite__carrousel__img = document.querySelector(".boite__carrousel__img")
- 
   /* La collection des images de la galerie */
   let galerie__img = document.querySelectorAll('.galerie img');
-  console.log(galerie__img.length);   
   // console.log(galerie__img.length);   
  
  
@@ -30,7 +27,6 @@
   */ 
   boite__carrousel__fermeture.addEventListener('mousedown', function(){
      boite__carrousel.classList.remove('ouvrir')
- 
   })
  
  /**
@@ -38,14 +34,8 @@
   *  
   * */ 
  
-  let index = 0
   let index = 0 // pour associer chaque bouton radio à une image de la galerie.
   for (const img of galerie__img) {
-    let elmImg = document.createElement('img')
-    // console.log(img.getAttribute('src'))
-    img.dataset.index = index;
-    elmImg.setAttribute('src', img.getAttribute('src'))
-    boite__carrousel__img.append(elmImg)
  
    /* Creation d'une balise img qui sera intégré dans le carrousel */
     let elmImg = document.createElement('img') // l'élément img du carrousel
@@ -69,25 +59,14 @@
  
      /* Les boutons radio permettent de changer l'image avec une animation */
  
-      let bouton = document.createElement('input')
-      bouton.checked=false
-      bouton.type = "radio"
-      bouton.class="bouton"
-      bouton.name="bouton"
-      bouton.dataset.index = index++
-      boite__carrousel__navigation.append(bouton)
-      bouton.addEventListener('mousedown', function(){
-         // elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
-         boite__carrousel__img.children[this.dataset.index].classList.add('img--ouvrir')
       bouton.addEventListener('mousedown', function(e){
        e.preventDefault;
        initialise__carrousel__img()    // pour retirer la classe .img--ouvrir de l'ensemble des image du carrousel
- 
+       
        boite__carrousel__img.children[this.dataset.index].classList.add('img--ouvrir')
       })
  
-      console.log(img.tagName)
- 
+      
       /**
        * Ouverture de la boite__carrousel
        */
@@ -97,7 +76,6 @@
  
           boite__carrousel.classList.add('ouvrir')
          //console.log(boite__carrousel.classList)
-          boite__carrousel__img.children[this.dataset.index].classList.add('img--ouvrir')
          initialise__carrousel__img()
           boite__carrousel__img.children[this.dataset.index].classList.add('img--ouvrir')  // on sélectionne l'image
           boite__carrousel__navigation.children[this.dataset.index].checked=true // on sélectionne le radio bouton
@@ -105,7 +83,7 @@
  
       })
  
- 
+   
      /**
       * On retire les class CSS des images du carrousel à chaque fois que l'on selectionne un radio bouton
       *  
@@ -121,3 +99,4 @@
         }
       }
   }
+ })()

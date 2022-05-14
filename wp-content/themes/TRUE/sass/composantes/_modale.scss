@@ -6,9 +6,7 @@
     
     .boite__modale, .boite__carrousel { // les propriétés commununes aux deux boîtes : modale et carrousel  
         position : fixed;
-    
-        border : 5px solid #aaa;
-        background-color:  rgb(60, 68, 75);
+        background-color:  rgb(78, 190, 242);
         transform : scale(0);
         transition : all 1s ease-in-out;
         &__fermeture {

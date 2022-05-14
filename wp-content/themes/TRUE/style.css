@@ -643,9 +643,7 @@ COMPOSANTES
 }
 
 #burger {
-  position: absolute;
-  transition: transform .3s;
-  transform: rotate(0);
+  z-index: 99;
 }
 
 #chk-burger {
@@ -660,29 +658,48 @@ COMPOSANTES
   display: block;
 }
 
-.menu-principal-container {
-  padding: 30px 0 0 0;
-  background-color: #002fff;
-}
-
-.menu-principal-container .menu {
+.menu {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 2%;
 }
 
-.menu-principal-container .menu-item {
+.menu-item {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 25px;
+  margin-left: 25px;
 }
 
-.menu-principal-container .menu-item a {
-  display: block;
-  text-decoration: none;
-  padding: 4px;
+.menu-item:hover {
+  background-color: #0f5dab;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.menu-principal-container .menu-item a:hover {
-  background-color: #0011ff;
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+    padding: 20px;
+    box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+    width: 280px;
+    .menu-item:hover {
+      color: #00eeff;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -692,6 +709,7 @@ COMPOSANTES
   .site .menu-principal-container {
     display: block;
   }
+  /* ----------------------------------------- */
   .home #burger {
     display: block;
   }
@@ -1001,8 +1019,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .boite__modale .boite__modale, .boite__modale .boite__carrousel, .boite__carrousel .boite__modale, .boite__carrousel .boite__carrousel {
   position: fixed;
-  border: 5px solid #aaa;
-  background-color: #3c444b;
+  background-color: #4ebef2;
   transform: scale(0);
   transition: all 1s ease-in-out;
 }
