@@ -742,7 +742,8 @@ COMPOSANTES
   flex-direction: column;
   flex: 0 0 20%;
   height: 175px;
-  border: 1px solid #aaa;
+  padding-top: 10px;
+  box-shadow: 10px 10px 0px 5px rgba(0, 0, 0, 0.75);
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
@@ -762,7 +763,6 @@ COMPOSANTES
 .menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
-  border: 1px solid #aaa;
   margin-top: auto;
   background-repeat: no-repeat;
   background-position: center;

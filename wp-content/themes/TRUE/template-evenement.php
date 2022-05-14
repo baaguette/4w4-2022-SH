@@ -10,7 +10,7 @@ get_header();
 
 <main class="site__main">
      <section class="evenement">
-     <h1>Template Evenement EXEMPLE</h1>
+     <h1>Template Evenement</h1>
      <?php if (have_posts()):  the_post(); ?>
      <?php the_post_thumbnail(); ?>
      <?php the_title() ?>
