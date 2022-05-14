@@ -673,6 +673,7 @@ COMPOSANTES
   padding: 15px;
   padding-right: 25px;
   margin-left: 25px;
+  list-style-type: none;
 }
 
 .menu-item:hover {
@@ -695,6 +696,7 @@ COMPOSANTES
     padding: 4px;
     text-align: center;
     width: 280px;
+    font-size: 20px;
     .menu-item:hover {
       color: #00eeff;
       text-decoration: underline;

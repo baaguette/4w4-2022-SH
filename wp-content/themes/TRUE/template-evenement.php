@@ -13,7 +13,7 @@ get_header();
      <h1>Template Evenement</h1>
      <?php if (have_posts()):  the_post(); ?>
      <?php the_post_thumbnail(); ?>
-     <?php the_title() ?>
+     <h1> <?php the_title() ?></h1>
      <p class='evenement__resume'><?php the_field('resume'); ?></p>
      <p class='evenement__endroit'><?php the_field('endroit'); ?></p> 
      <p><?php the_field('organisateur'); ?></p>

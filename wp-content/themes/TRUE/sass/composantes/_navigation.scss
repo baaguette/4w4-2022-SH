@@ -25,6 +25,7 @@
     padding-top : 40px;
     padding-bottom: 2%;
     
+    
 }
 .menu-item{
     margin:0;
@@ -33,6 +34,7 @@
     padding: 15px;
     padding-right:25px ;
     margin-left: 25px;
+    list-style-type: none;
 
     &:hover{
         background-color: rgb(15, 93, 171);
@@ -55,6 +57,7 @@
         padding : 4px;
         text-align: center;
         width: 280px;
+        font-size: 20px;
         
         &:hover {
             color: $color__link-hover;   
