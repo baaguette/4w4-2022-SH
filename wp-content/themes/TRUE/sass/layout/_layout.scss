@@ -21,7 +21,7 @@
 
 .site__header{
     grid-area: header;  
-    background-color: rgba($color__background-header,.5);
+    background-color: $color__background-header;
 }
 
 .site__barre{
@@ -31,6 +31,7 @@
 
 .site__main{
     grid-area: main;
+    margin-top: 100px;
     background-color: rgba($color__background-main,.5);
     padding: 10%;
     padding-top: 10px;

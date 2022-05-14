@@ -23,14 +23,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
     
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author"> &copy TIM & &copy Sara Hébert</h3>
@@ -52,7 +44,7 @@ wp_nav_menu(array(
     <p class="boite__modale__texte">
     </p>
     <div class="boite__carrousel">
-    <button class="boite__carrousel__ferme">X</button>
+    <button class="boite__carrousel__fermeture">X</button>
     <section class="boite__carrousel__navigation"></section>
 </div>
 </div>
