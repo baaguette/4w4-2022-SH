@@ -1,15 +1,45 @@
 
 .atelier {
     padding: 15px;
+    
 
 }
-.atelier__desc{}
-.atelier__anim{}
-.atelier__ddd{}
-.atelier__ddf{}
-.atelier__semaine{}
+.atelier__desc{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-style: italic;
+    padding-bottom: 10%;
+    
+}
+.atelier__anim{
+font-size: 30px;
+float: right;
+    
+}
+.atelier__ddd{
+font-weight: bold;
 
-.atelier__hs{}
-.atelier__hf{}
-.atelier__duree{}
-.atelier__local{}
+}
+.atelier__ddf{
+font-weight: bold;
+
+  
+}
+.atelier__semaine{
+    font-style: italic;
+}
+.atelier__hs{
+    font-weight: bold;
+    font-style: italic;
+}
+.atelier__hf{
+    font-weight: bold;
+    font-style: italic;
+}
+.atelier__duree{
+    font-style: italic;
+}
+.atelier__local{
+    font-weight: bold;
+}

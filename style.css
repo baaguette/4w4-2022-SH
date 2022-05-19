@@ -707,11 +707,6 @@ svg:hover {
   list-style-type: none;
 }
 
-.menu-item:hover {
-  background-color: #0f5dab;
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
 @keyframes slide-right {
   0% {
     transform: translateX(0);
@@ -1165,6 +1160,49 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .atelier {
   padding: 15px;
+}
+
+.atelier__desc {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-style: italic;
+  padding-bottom: 10%;
+}
+
+.atelier__anim {
+  font-size: 30px;
+  float: right;
+}
+
+.atelier__ddd {
+  font-weight: bold;
+}
+
+.atelier__ddf {
+  font-weight: bold;
+}
+
+.atelier__semaine {
+  font-style: italic;
+}
+
+.atelier__hs {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.atelier__hf {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.atelier__duree {
+  font-style: italic;
+}
+
+.atelier__local {
+  font-weight: bold;
 }
 
 /* ---------------------------------------------------------

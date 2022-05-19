@@ -10,11 +10,13 @@ get_header();
 
 <main class="site__main">
      <section class="atelier">
-     <h2>Template atelier</h2>
+     
      <?php if (have_posts()):  the_post(); ?>
      <?php the_post_thumbnail(); ?>
-     <h1> <?php the_title() ?></h1>
-     <p class='atelier__desc'><?php the_field('atelier__desc'); ?>hai</p>
+     <h1> Atelier: <?php the_title() ?></h1>
+     <h2> <u> Description de l'atelier</u></h2>
+     <p class='atelier__desc'><?php the_field('atelier__desc'); ?></p>
+     <h2><u> Horraire de l'atelier</u></h2>
      <p class='atelier__anim'><?php the_field('atelier__anim'); ?></p> 
      <p class='atelier__ddd'><?php the_field('atelier__ddd'); ?></p>
      <p class='atelier__ddf'><?php the_field('atelier__ddf'); ?></p> 
