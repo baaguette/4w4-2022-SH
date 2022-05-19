@@ -9,7 +9,10 @@
 <h2>Les événement de l'année</h2>
 <?php wp_nav_menu(array(
         "menu"=> "evenement",
-        "container" => "nav")); ?>        
+        "container" => "nav")); ?>   
+<?php wp_nav_menu(array(
+        "menu"=> "atelier",
+        "container" => "nav")); ?>           
     <h1>Page principale</h1>
    <?php if (have_posts()): the_post(); ?>
    <h2>  <?php the_title() ?></h2>
