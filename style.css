@@ -793,7 +793,8 @@ svg:hover {
   flex-direction: column;
   flex: 0 0 20%;
   height: 175px;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding: 10px;
   box-shadow: 10px 10px 0px 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -804,6 +805,7 @@ svg:hover {
   text-decoration: none;
   height: 100%;
   font-size: 2rem;
+  text-align: center;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
