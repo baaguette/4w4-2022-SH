@@ -788,6 +788,22 @@ svg:hover {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
+.menu-accueil-container .menu .ahtml .menu-item-icone, .menu-evenement-container .menu .ahtml .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-accueil-container .menu .areact .menu-item-icone, .menu-evenement-container .menu .areact .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .acss .menu-item-icone, .menu-evenement-container .menu .acss .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .agit .menu-item-icone, .menu-evenement-container .menu .agit .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
