@@ -707,6 +707,11 @@ svg:hover {
   list-style-type: none;
 }
 
+.menu-item:hover {
+  background-color: #0f5dab;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @keyframes slide-right {
   0% {
     transform: translateX(0);
