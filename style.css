@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4W4 TP2 S-Hebert
+theme name: 2022-4W4 Épreuve finale"
 Author: Sara Hébert
 Author URI: https://github.com/baaguette
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/baaguette
@@ -1143,6 +1143,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .boite__modale .boite__carrousel__navigation__navigation .bouton .bouton:focus, .boite__carrousel .boite__carrousel__navigation__navigation .bouton .bouton:focus {
   background-color: black;
+}
+
+.atelier {
+  padding: 15px;
 }
 
 /* ---------------------------------------------------------
